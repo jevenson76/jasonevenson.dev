@@ -152,10 +152,10 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className={`relative rounded-2xl p-8 ${
+              className={`group relative rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 ${
                 tier.highlighted
-                  ? 'bg-gradient-to-b from-purple-900/50 to-blue-900/50 border-2 border-purple-500'
-                  : 'bg-gray-900 border border-gray-800'
+                  ? 'bg-gradient-to-b from-purple-900/50 to-blue-900/50 border-2 border-purple-500 shadow-2xl shadow-purple-500/20 hover:shadow-purple-500/30'
+                  : 'bg-gray-900 border border-gray-800 shadow-xl hover:shadow-2xl hover:border-gray-600'
               }`}
             >
               {tier.popular && (
@@ -167,14 +167,14 @@ const Services = () => {
               )}
 
               <div className="text-center mb-8">
-                <div className="text-4xl mb-4 inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-purple-500/20 to-blue-500/20">
+                <div className="text-5xl mb-6 inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r from-purple-500/20 to-blue-500/20">
                   <span className="text-purple-400">{tier.icon}</span>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-2">{tier.name}</h3>
-                <p className="text-gray-400 text-sm mb-4">{tier.description}</p>
-                <div className="flex items-baseline justify-center gap-1">
-                  <span className="text-4xl font-bold text-white">{tier.price}</span>
-                  <span className="text-gray-400">/{tier.period}</span>
+                <h3 className="text-3xl font-bold text-white mb-3">{tier.name}</h3>
+                <p className="text-gray-400 text-base mb-6 leading-relaxed">{tier.description}</p>
+                <div className="flex items-baseline justify-center gap-2 mb-2">
+                  <span className="text-5xl font-bold text-white">{tier.price}</span>
+                  <span className="text-lg text-gray-400">/{tier.period}</span>
                 </div>
               </div>
 

@@ -15,52 +15,88 @@ interface Deliverable {
 const Deliverables = () => {
   const deliverables: Deliverable[] = [
     {
-      icon: <FaChartLine />,
-      title: 'Executive AI Reports',
-      description: 'Strategic analysis and ROI projections for C-suite decision making',
-      examples: [
-        'AI Readiness Assessment',
-        'Automation Opportunity Analysis', 
-        'ROI Impact Projections',
-        'Implementation Roadmaps'
-      ],
-      value: 'Save 40+ hours of research'
-    },
-    {
       icon: <FaRobot />,
-      title: 'Custom AI Chatbots',
-      description: 'Revenue-generating conversational AI for sales and support',
+      title: 'AI Development & Integration',
+      description: 'Enterprise-grade AI solutions using cutting-edge APIs and frameworks',
       examples: [
-        'Lead Qualification Bots',
-        'Customer Support AI',
-        'Sales Funnel Automation',
-        'FAQ & Knowledge Bases'
+        'ChatGPT & Claude API Implementation',
+        'LangChain AI Agent Development',
+        'Machine Learning Model Integration',
+        'OpenAI API Custom Solutions',
+        'Prompt Engineering & Optimization',
+        'AI Strategy & Digital Transformation'
       ],
-      value: '24/7 customer engagement'
-    },
-    {
-      icon: <FaBuilding />,
-      title: 'AI Agency Systems',
-      description: 'White-label AI solutions for agencies and consultants',
-      examples: [
-        'Client Onboarding Automation',
-        'Report Generation Tools',
-        'Proposal Creation Systems',
-        'Performance Dashboards'
-      ],
-      value: 'Scale without hiring'
+      value: 'Expert-level implementation'
     },
     {
       icon: <FaCogs />,
       title: 'Business Process Automation',
-      description: 'End-to-end workflow optimization with measurable outcomes',
+      description: 'Complete workflow automation using enterprise platforms',
       examples: [
-        'Invoice Processing Automation',
-        'CRM Data Synchronization',
-        'Email Marketing Workflows',
-        'Inventory Management Systems'
+        'Make.com & Zapier Integration',
+        'N8N Workflow Development',
+        'Microsoft Power Automate',
+        'CRM Integration (Salesforce)',
+        'Webhook & API Integration',
+        'Process Mining & Optimization'
       ],
       value: 'Reduce manual work by 60%+'
+    },
+    {
+      icon: <FaChartLine />,
+      title: 'Revenue Optimization Systems',
+      description: 'Data-driven solutions for sales and conversion improvement',
+      examples: [
+        'Sales Funnel Development',
+        'ROI Analysis & Reporting',
+        'Conversion Optimization',
+        'Business Intelligence Dashboards',
+        'Revenue Automation',
+        'B2B Sales Process Enhancement'
+      ],
+      value: 'Measurable revenue impact'
+    },
+    {
+      icon: <FaBuilding />,
+      title: 'Enterprise Integration',
+      description: 'Corporate-level technical solutions and consulting',
+      examples: [
+        'Enterprise Software Integration',
+        'Technical Documentation',
+        'Agile Project Management',
+        'Data Analytics & Reporting',
+        'YouTube API & Social Media',
+        'Business Consulting & Strategy'
+      ],
+      value: 'Fortune 500 experience'
+    },
+    {
+      icon: <FaUsers />,
+      title: 'Custom Development',
+      description: 'Tailored solutions built with modern technologies',
+      examples: [
+        'Python Development',
+        'API Integration & Development',
+        'Database Design & Management',
+        'Cloud Solutions (DevOps)',
+        'Mobile & Web Applications',
+        'Blockchain & NFT Development'
+      ],
+      value: 'Complete technical solutions'
+    },
+    {
+      icon: <FaFileAlt />,
+      title: 'Strategic Consulting',
+      description: 'Executive-level guidance for AI transformation initiatives',
+      examples: [
+        'Digital Transformation Planning',
+        'AI Implementation Roadmaps',
+        'Executive Training & Workshops',
+        'Change Management Support',
+        'Technology Stack Assessment',
+        'ROI Projection & Analysis'
+      ],
+      value: 'C-suite strategic partnership'
     }
   ];
 
@@ -81,7 +117,7 @@ const Deliverables = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {deliverables.map((deliverable, index) => (
             <motion.div
               key={index}
@@ -89,7 +125,7 @@ const Deliverables = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-gray-800 rounded-xl p-8 border border-gray-700 hover:border-[var(--quantum-glow)]/50 transition-colors"
+              className="group bg-gray-800 rounded-xl p-8 border border-gray-700 shadow-xl hover:border-[var(--quantum-glow)]/50 hover:shadow-2xl hover:shadow-[var(--quantum-glow)]/10 transition-all duration-300 hover:-translate-y-2"
             >
               <div className="flex items-start gap-4 mb-6">
                 <div className="text-3xl text-[var(--quantum-glow)] mt-1">
