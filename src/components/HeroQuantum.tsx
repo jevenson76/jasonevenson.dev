@@ -4,9 +4,22 @@ import { motion } from 'framer-motion';
 export function HeroQuantum() {
   return (
     <section className="relative flex items-center justify-center min-h-[80vh] perspective-1000">
-      {/* Static background element */}
+      {/* Premium background elements */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="w-[500px] h-[500px] md:w-[600px] md:h-[600px] rounded-full border border-[var(--quantum-glow)]/20" />
+        {/* Main circle */}
+        <div className="w-[700px] h-[700px] md:w-[800px] md:h-[800px] rounded-full border border-[var(--quantum-glow)]/30 shadow-2xl shadow-[var(--quantum-glow)]/10" />
+        
+        {/* Inner accent circle */}
+        <div className="absolute w-[600px] h-[600px] md:w-[700px] md:h-[700px] rounded-full border border-[var(--quantum-glow)]/10" />
+        
+        {/* Outer glow circle */}
+        <div className="absolute w-[800px] h-[800px] md:w-[900px] md:h-[900px] rounded-full border border-[var(--quantum-glow)]/5" />
+        
+        {/* Premium floating particles */}
+        <div className="absolute w-3 h-3 bg-[var(--quantum-glow)] rounded-full shadow-lg shadow-[var(--quantum-glow)]/50 animate-pulse" style={{top: '20%', left: '30%'}} />
+        <div className="absolute w-2 h-2 bg-purple-400 rounded-full shadow-lg shadow-purple-400/50 animate-pulse" style={{top: '70%', right: '25%', animationDelay: '1s'}} />
+        <div className="absolute w-4 h-4 bg-blue-400 rounded-full shadow-lg shadow-blue-400/50 animate-pulse" style={{bottom: '25%', left: '20%', animationDelay: '2s'}} />
+        <div className="absolute w-2 h-2 bg-[var(--quantum-glow)] rounded-full shadow-lg shadow-[var(--quantum-glow)]/50 animate-pulse" style={{top: '40%', right: '15%', animationDelay: '0.5s'}} />
       </div>
 
       {/* Headline */}

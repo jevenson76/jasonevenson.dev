@@ -107,13 +107,21 @@ const Deliverables = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            What You Actually Get
+          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-full px-6 py-2 mb-6 border border-[var(--quantum-glow)]/30">
+            <div className="w-2 h-2 bg-[var(--quantum-glow)] rounded-full animate-pulse"></div>
+            <span className="text-[var(--quantum-glow)] font-medium">Enterprise-Grade Solutions</span>
+          </div>
+          <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            <span className="bg-gradient-to-r from-[var(--quantum-glow)] to-purple-400 bg-clip-text text-transparent">
+              Power Up
+            </span>
+            <br />
+            Your Revenue Engine
           </h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-            Tangible business tools and systems that drive immediate value. No abstract concepts—just results.
+          <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+            Stop paying for consultants who deliver PowerPoints. Get <strong className="text-white">working systems</strong> that generate revenue from day one. Built with Fortune 500 experience, delivered with startup speed.
           </p>
         </motion.div>
 

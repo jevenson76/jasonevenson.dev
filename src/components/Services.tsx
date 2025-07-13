@@ -18,14 +18,14 @@ interface ServiceTier {
 }
 
 const Services = () => {
-  const [billingCycle, setBillingCycle] = useState<'monthly' | 'project'>('project');
+  const [billingCycle, setBillingCycle] = useState<'investment' | 'retainer'>('investment');
 
   const tiers: ServiceTier[] = [
     {
       name: 'Growth',
       icon: <FaRocket />,
-      price: billingCycle === 'project' ? '$3,000' : '$1,200',
-      period: billingCycle === 'project' ? 'per project' : 'per month',
+      price: billingCycle === 'investment' ? '$3,000' : '$1,200',
+      period: billingCycle === 'investment' ? 'fixed investment' : 'monthly retainer',
       description: 'For growing businesses ready to streamline operations',
       features: [
         'Process automation assessment',
@@ -40,8 +40,8 @@ const Services = () => {
     {
       name: 'Professional',
       icon: <FaCrown />,
-      price: billingCycle === 'project' ? '$8,000' : '$3,200',
-      period: billingCycle === 'project' ? 'per project' : 'per month',
+      price: billingCycle === 'investment' ? '$8,000' : '$3,200',
+      period: billingCycle === 'investment' ? 'fixed investment' : 'monthly retainer',
       description: 'Revenue-generating AI systems for established companies',
       features: [
         'Multi-process automation',
@@ -112,33 +112,33 @@ const Services = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            AI Automation Packages
+            Revenue-First AI Automation
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
-            Revenue-generating AI systems with guaranteed ROI. Choose the automation level that fits your business.
+            Clear, transparent pricing for measurable business outcomes. No hourly billing games—just results.
           </p>
 
           {/* Billing Toggle */}
           <div className="inline-flex bg-gray-900 rounded-lg p-1">
             <button
-              onClick={() => setBillingCycle('project')}
+              onClick={() => setBillingCycle('investment')}
               className={`px-6 py-2 rounded-md text-sm font-medium transition-all ${
-                billingCycle === 'project'
+                billingCycle === 'investment'
                   ? 'bg-gradient-to-r from-purple-500 to-blue-500 text-white'
                   : 'text-gray-400 hover:text-white'
               }`}
             >
-              Project-Based
+              Fixed Investment
             </button>
             <button
-              onClick={() => setBillingCycle('monthly')}
+              onClick={() => setBillingCycle('retainer')}
               className={`px-6 py-2 rounded-md text-sm font-medium transition-all ${
-                billingCycle === 'monthly'
+                billingCycle === 'retainer'
                   ? 'bg-gradient-to-r from-purple-500 to-blue-500 text-white'
                   : 'text-gray-400 hover:text-white'
               }`}
             >
-              Monthly Retainer
+              Monthly Partnership
             </button>
           </div>
         </motion.div>
