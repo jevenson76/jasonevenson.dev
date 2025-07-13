@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* PRD Palette mapped to Tailwind */
+  --color-primary: #00ab14;
+  --color-teal:    #00ab7a;
+  --color-lime:    #54ab00;
+  --color-dark:    #1a2e2b;
+  --color-black:   #121212;
+  --color-neon:    #00f7ff;
+  --color-lav:     #b8a9ff;
+  --color-gold:    #d4a017;
+
+  /* Quantum interface palette from HTML */
+  --quantum-deep:  #0a0e27;
+  --quantum-dark:  #1a1f4a;
+  --quantum-glow:  #818cf8;
+  --quantum-cyan:  #06b6d4;
+  --quantum-purple:#6b46c1;
+}
+
+html,body {
+  @apply bg-[var(--quantum-deep)] text-[#f0f9ff] font-sans;
+}
+
+/* Particle field */
+.quantum-field {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.quantum-particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--quantum-glow);
+  border-radius: 50%;
+  filter: blur(1px);
+  animation: float 20s infinite linear;
+}
+
+@keyframes float {
+  0%   { transform: translate3d(0, 100vh, 0) scale(0); opacity: 0; }
+  10%,90% { opacity: 1; }
+  100% { transform: translate3d(100vw, -100vh, 0) scale(1.5); opacity: 0; }
+}
+
+body:has(.z-\[9999\]) {
+  overflow: hidden;
+}

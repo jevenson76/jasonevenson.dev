@@ -1,0 +1,25 @@
+# Next.js build files
+.next/
+out/
+build/
+dist/
+
+# Cache files
+*.cache
+.cache/
+
+# Dependencies
+node_modules/
+
+# Environment files
+.env*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
