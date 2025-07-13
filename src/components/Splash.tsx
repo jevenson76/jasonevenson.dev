@@ -34,41 +34,18 @@ const Splash: React.FC<SplashProps> = ({ onComplete }) => {
         transition={{ duration: 0.5 }}
       >
         <div className="text-center">
-          {/* Logo Animation */}
+          {/* Clean Logo with JRE initials */}
           <motion.div
-            initial={{ scale: 0, rotate: -180 }}
-            animate={{ scale: 1, rotate: 0 }}
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.8, type: "spring" }}
             className="mb-8"
           >
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-              className="w-24 h-24 mx-auto"
-            >
-              <svg viewBox="0 0 100 100" className="w-full h-full">
-                <defs>
-                  <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#8B5CF6" />
-                    <stop offset="100%" stopColor="#3B82F6" />
-                  </linearGradient>
-                </defs>
-                <polygon
-                  points="50,10 90,30 90,70 50,90 10,70 10,30"
-                  fill="url(#gradient)"
-                  stroke="url(#gradient)"
-                  strokeWidth="2"
-                />
-                <text
-                  x="50"
-                  y="55"
-                  textAnchor="middle"
-                  className="fill-white font-bold text-2xl"
-                >
-                  JE
-                </text>
-              </svg>
-            </motion.div>
+            <div className="w-32 h-32 mx-auto rounded-full border border-[var(--quantum-glow)]/30 flex items-center justify-center">
+              <span className="text-4xl font-thin tracking-widest text-[var(--quantum-glow)]">
+                JRE
+              </span>
+            </div>
           </motion.div>
 
           {/* Loading Text */}
@@ -76,7 +53,7 @@ const Splash: React.FC<SplashProps> = ({ onComplete }) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-2xl md:text-3xl font-bold text-white mb-2"
+            className="text-2xl md:text-3xl font-thin tracking-wide text-white mb-2"
           >
             Jason Evenson
           </motion.h1>
@@ -85,9 +62,9 @@ const Splash: React.FC<SplashProps> = ({ onComplete }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
-            className="text-gray-400 mb-8"
+            className="text-[var(--quantum-cyan)] mb-8 font-light"
           >
-            Crafting Digital Experiences
+            AI Automation Strategist
           </motion.p>
 
           {/* Progress Bar */}
@@ -115,31 +92,6 @@ const Splash: React.FC<SplashProps> = ({ onComplete }) => {
           </motion.div>
         </div>
 
-        {/* Background Animation */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {[...Array(5)].map((_, i) => (
-            <motion.div
-              key={i}
-              className="absolute w-96 h-96 rounded-full"
-              style={{
-                background: `radial-gradient(circle, ${
-                  i % 2 === 0 ? 'rgba(139, 92, 246, 0.1)' : 'rgba(59, 130, 246, 0.1)'
-                } 0%, transparent 70%)`,
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-              }}
-              animate={{
-                scale: [1, 1.5, 1],
-                opacity: [0.3, 0.6, 0.3],
-              }}
-              transition={{
-                duration: 4 + i,
-                repeat: Infinity,
-                delay: i * 0.5,
-              }}
-            />
-          ))}
-        </div>
       </motion.div>
     </AnimatePresence>
   );

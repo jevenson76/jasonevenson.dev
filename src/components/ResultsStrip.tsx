@@ -6,10 +6,10 @@ import CountUp from 'react-countup';
 
 const ResultsStrip = () => {
   const stats = [
-    { value: 47, suffix: '%', label: 'Average Conversion Increase' },
-    { value: 3.2, suffix: 'x', label: 'ROI Improvement', decimals: 1 },
-    { value: 89, suffix: '%', label: 'Client Retention Rate' },
-    { value: 250, suffix: '+', label: 'Projects Completed' }
+    { value: 15, suffix: '+', label: 'Years Enterprise Experience' },
+    { value: 130, suffix: 'M', label: 'Project Portfolio Managed' },
+    { value: 35, suffix: '%', label: 'Regional Revenue Growth' },
+    { value: 30, suffix: '%', label: 'Consistently Over Quota' }
   ];
 
   return (

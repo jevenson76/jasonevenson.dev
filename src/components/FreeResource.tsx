@@ -31,23 +31,6 @@ const FreeResource = () => {
 
   return (
     <section className="py-20 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
-      {/* Animated Background */}
-      <div className="absolute inset-0">
-        <motion.div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px]"
-          animate={{
-            scale: [1, 1.2, 1],
-            rotate: [0, 180, 360]
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "linear"
-          }}
-        >
-          <div className="w-full h-full rounded-full bg-gradient-to-r from-purple-500/20 to-blue-500/20 blur-3xl" />
-        </motion.div>
-      </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
