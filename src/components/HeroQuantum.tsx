@@ -75,7 +75,15 @@ export function HeroQuantum() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          I Automate Revenue Growth with AI
+          AI Automation Strategist • 15+ Years Fortune 500 Experience
+        </motion.p>
+        <motion.p
+          className="mt-2 text-lg md:text-xl font-light tracking-wide text-gray-300 max-w-2xl mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+          Former Wandelbots Director & AnyLogic Regional Sales Leader. Proven track record managing $130M+ projects and driving enterprise AI transformations.
         </motion.p>
         <motion.div
           className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
@@ -87,15 +95,13 @@ export function HeroQuantum() {
             href="#contact"
             className="rounded-lg bg-[var(--color-primary)] px-6 py-3 font-semibold text-black hover:scale-105 transition-transform"
           >
-            Book Free Audit
+            Schedule Strategy Session
           </a>
           <a
-            href="https://fiverr.com/jasonevenson"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contact"
             className="rounded-lg border border-[var(--quantum-glow)] px-6 py-3 text-[var(--quantum-glow)] hover:bg-[var(--quantum-glow)] hover:text-black transition-colors"
           >
-            Quick Fix ($500+)
+            Get ROI Assessment
           </a>
         </motion.div>
       </div>

@@ -33,66 +33,66 @@ const BeforeAfter = () => {
 
   const caseStudies: CaseStudy[] = [
     {
-      id: 'ecommerce-transform',
-      title: 'E-commerce Platform Transformation',
-      company: 'TechStyle Fashion',
-      industry: 'E-commerce',
-      challenge: 'Outdated UI, poor mobile experience, and declining conversion rates',
-      solution: 'Complete redesign with AI-powered personalization and streamlined checkout',
+      id: 'anylogic-success',
+      title: 'Regional Sales Leadership at AnyLogic',
+      company: 'AnyLogic North America',
+      industry: 'Enterprise Software',
+      challenge: 'Drive AI-enabled simulation software adoption across 20-state territory',
+      solution: 'Strategic C-suite partnerships and enterprise client acquisition focus',
       results: [
-        { metric: 'Conversion Rate', improvement: '+47%', icon: <FaChartLine /> },
-        { metric: 'Mobile Users', improvement: '+85%', icon: <FaUsers /> },
-        { metric: 'Revenue', improvement: '+$2.3M', icon: <FaDollarSign /> },
-        { metric: 'Load Time', improvement: '-60%', icon: <FaClock /> }
+        { metric: 'Regional Revenue', improvement: '+35%', icon: <FaChartLine /> },
+        { metric: 'Enterprise Clients', improvement: '+40%', icon: <FaUsers /> },
+        { metric: 'Annual Revenue', improvement: '+$8M', icon: <FaDollarSign /> },
+        { metric: 'Sales Cycle', improvement: '-30%', icon: <FaClock /> }
       ],
       beforeImage: 'https://picsum.photos/800/600?random=1',
       afterImage: 'https://picsum.photos/800/600?random=2',
       testimonial: {
-        quote: "Jason didn't just redesign our platform; he reimagined our entire digital strategy. The results speak for themselves.",
-        author: "Sarah Chen",
-        role: "CEO, TechStyle Fashion"
+        quote: "Jason's ability to translate complex AI concepts into business value drove record-breaking sales in our region.",
+        author: "AnyLogic Leadership",
+        role: "Regional Management Team"
       }
     },
     {
-      id: 'saas-dashboard',
-      title: 'SaaS Dashboard Optimization',
-      company: 'DataFlow Analytics',
-      industry: 'B2B SaaS',
-      challenge: 'Complex interface causing high churn and support tickets',
-      solution: 'Intuitive dashboard with AI-assisted insights and guided onboarding',
+      id: 'att-enterprise',
+      title: 'AT&T Enterprise Sales Excellence',
+      company: 'AT&T Business',
+      industry: 'Enterprise Telecommunications',
+      challenge: 'Drive enterprise solution adoption in competitive telecom market',
+      solution: 'Strategic B2B sales execution and robust pipeline development',
       results: [
-        { metric: 'User Retention', improvement: '+62%', icon: <FaUsers /> },
-        { metric: 'Support Tickets', improvement: '-73%', icon: <FaChartLine /> },
-        { metric: 'Feature Adoption', improvement: '+91%', icon: <FaChartLine /> },
-        { metric: 'Time to Value', improvement: '-45%', icon: <FaClock /> }
+        { metric: 'Quarterly Targets', improvement: '+30%', icon: <FaChartLine /> },
+        { metric: 'Sales Pipeline', improvement: '$17M', icon: <FaDollarSign /> },
+        { metric: 'YOY Revenue', improvement: '+9%', icon: <FaUsers /> },
+        { metric: 'Team Performance', improvement: 'Top Nationwide', icon: <FaClock /> }
       ],
       beforeImage: 'https://picsum.photos/800/600?random=3',
       afterImage: 'https://picsum.photos/800/600?random=4',
       testimonial: {
-        quote: "The transformation was remarkable. Our users went from frustrated to delighted, and our metrics followed suit.",
-        author: "Michael Torres",
-        role: "CPO, DataFlow Analytics"
+        quote: "Jason consistently delivered exceptional results, positioning our team as top performers with his strategic approach to enterprise sales.",
+        author: "AT&T Leadership",
+        role: "Regional Management"
       }
     },
     {
-      id: 'mobile-app',
-      title: 'Mobile App Revitalization',
-      company: 'FitLife Pro',
-      industry: 'Health & Fitness',
-      challenge: 'Low engagement and poor user retention in competitive market',
-      solution: 'Gamified experience with AI coaching and social features',
+      id: 'wandelbots-leadership',
+      title: 'Wandelbots US Go-to-Market Strategy',
+      company: 'Wandelbots',
+      industry: 'Robotics Automation',
+      challenge: 'Launch innovative robotics software in competitive US market',
+      solution: 'Strategic partnerships and consultative selling of no-code automation',
       results: [
-        { metric: 'Daily Active Users', improvement: '+125%', icon: <FaUsers /> },
-        { metric: 'Session Duration', improvement: '+89%', icon: <FaClock /> },
-        { metric: 'In-App Purchases', improvement: '+156%', icon: <FaDollarSign /> },
-        { metric: 'App Store Rating', improvement: '4.8★', icon: <FaChartLine /> }
+        { metric: 'Market Penetration', improvement: 'Startup to Fortune 500', icon: <FaUsers /> },
+        { metric: 'Strategic Partnerships', improvement: 'Cross-Industry', icon: <FaChartLine /> },
+        { metric: 'Solution Accessibility', improvement: 'All Business Sizes', icon: <FaDollarSign /> },
+        { metric: 'Technology Adoption', improvement: 'Advanced Robotics', icon: <FaClock /> }
       ],
       beforeImage: 'https://picsum.photos/800/600?random=5',
       afterImage: 'https://picsum.photos/800/600?random=6',
       testimonial: {
-        quote: "Jason turned our struggling app into a market leader. His strategic approach to user engagement was game-changing.",
-        author: "Alex Rivera",
-        role: "Founder, FitLife Pro"
+        quote: "Jason's leadership in our US expansion demonstrated his ability to bridge cutting-edge technology with practical business applications.",
+        author: "Wandelbots Team",
+        role: "Executive Leadership"
       }
     }
   ];

@@ -22,36 +22,36 @@ const Services = () => {
 
   const tiers: ServiceTier[] = [
     {
-      name: 'Starter',
+      name: 'Growth',
       icon: <FaRocket />,
-      price: billingCycle === 'project' ? '$5,000' : '$1,500',
+      price: billingCycle === 'project' ? '$3,000' : '$1,200',
       period: billingCycle === 'project' ? 'per project' : 'per month',
-      description: 'Perfect for businesses ready to automate their first process',
+      description: 'For growing businesses ready to streamline operations',
       features: [
-        'Single process automation',
-        'AI chatbot setup',
-        'Basic integrations',
-        '1-week implementation',
-        '30-day support',
-        'ROI tracking dashboard'
+        'Process automation assessment',
+        'Single workflow optimization',
+        'Basic AI implementation',
+        '2-week delivery',
+        'Knowledge transfer',
+        'Performance metrics'
       ],
       cta: 'Get Started'
     },
     {
       name: 'Professional',
       icon: <FaCrown />,
-      price: billingCycle === 'project' ? '$15,000' : '$4,500',
+      price: billingCycle === 'project' ? '$8,000' : '$3,200',
       period: billingCycle === 'project' ? 'per project' : 'per month',
-      description: 'Complete AI transformation for growing businesses',
+      description: 'Revenue-generating AI systems for established companies',
       features: [
-        'Full workflow automation',
-        'Custom AI models',
-        'Advanced integrations',
-        '4-week implementation',
-        '90-day optimization',
-        'Dedicated support',
-        '340% average ROI',
-        'Performance monitoring'
+        'Multi-process automation',
+        'Custom AI integrations',
+        'Advanced analytics',
+        '6-week implementation',
+        'Training & documentation',
+        'Ongoing support included',
+        'Backed by Fortune 500 experience',
+        'ROI tracking & optimization'
       ],
       highlighted: true,
       popular: true,
@@ -60,29 +60,29 @@ const Services = () => {
     {
       name: 'Enterprise',
       icon: <FaInfinity />,
-      price: 'Custom',
-      period: 'pricing',
-      description: 'Enterprise-grade AI systems for market leaders',
+      price: '$25,000+',
+      period: 'strategic engagement',
+      description: 'C-suite strategic AI transformation partnerships',
       features: [
-        'Multi-department automation',
-        'Custom AI architecture',
-        'White-label solutions',
-        '12-week rollout',
-        'Ongoing optimization',
-        'Dedicated team',
-        'Strategic consulting',
-        'Revenue guarantees'
+        'Enterprise-wide automation strategy',
+        'Executive-level consulting',
+        'Custom AI architecture design',
+        'Change management support',
+        'Phased implementation roadmap',
+        'Cross-functional team training',
+        'Drawing from $130M+ project experience',
+        'Ongoing strategic partnership'
       ],
-      cta: 'Contact Us'
+      cta: 'Schedule Consultation'
     }
   ];
 
   const addOns = [
-    { name: 'AI Chatbot', price: '$2,500+' },
-    { name: 'Lead Scoring AI', price: '$3,500+' },
-    { name: 'Process Mining', price: '$4,000+' },
-    { name: 'Custom AI Models', price: '$10,000+' },
-    { name: 'Ongoing Optimization', price: '$1,500/mo' }
+    { name: 'Executive Strategy Sessions', price: '$2,500+' },
+    { name: 'Process Automation Audit', price: '$1,500+' },
+    { name: 'Team Training & Workshops', price: '$3,500+' },
+    { name: 'Custom AI Development', price: '$8,000+' },
+    { name: 'Ongoing Optimization', price: '$1,200/mo' }
   ];
 
   return (

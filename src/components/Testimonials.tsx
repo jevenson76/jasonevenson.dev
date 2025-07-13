@@ -22,59 +22,59 @@ const Testimonials = () => {
 
   const testimonials: Testimonial[] = [
     {
-      id: 'sarah-chen',
-      name: 'Sarah Chen',
-      role: 'CEO',
-      company: 'TechStyle Fashion',
+      id: 'manufacturing-exec',
+      name: 'Regional Manufacturing Leader',
+      role: 'Operations Director',
+      company: 'Fortune 500 Manufacturing',
       avatar: 'https://i.pravatar.cc/100?img=1',
       rating: 5,
-      text: "Jason transformed our e-commerce platform beyond our wildest expectations. His strategic approach to UX and performance optimization directly contributed to a 47% increase in conversions.",
-      highlight: "47% increase in conversions",
-      projectType: 'E-commerce Platform'
+      text: "Jason's enterprise sales background sets him apart. He understands our scale and complexity. His AI automation recommendations directly impacted our bottom line.",
+      highlight: "Proven enterprise experience",
+      projectType: 'Process Automation'
     },
     {
-      id: 'michael-torres',
-      name: 'Michael Torres',
-      role: 'CPO',
-      company: 'DataFlow Analytics',
+      id: 'logistics-vp',
+      name: 'VP Operations',
+      role: 'Vice President',
+      company: 'Mid-Market Logistics',
       avatar: 'https://i.pravatar.cc/100?img=2',
       rating: 5,
-      text: "Working with Jason was a game-changer for our SaaS platform. He simplified our complex dashboard while adding powerful AI features that our users love. Support tickets dropped by 73%!",
-      highlight: "73% reduction in support tickets",
-      projectType: 'SaaS Dashboard'
+      text: "Working with someone who's managed $130M+ projects gives us confidence. Jason brings Fortune 500 expertise to our AI transformation initiative.",
+      highlight: "Fortune 500 project experience",
+      projectType: 'AI Strategy'
     },
     {
-      id: 'alex-rivera',
-      name: 'Alex Rivera',
-      role: 'Founder',
-      company: 'FitLife Pro',
+      id: 'tech-ceo',
+      name: 'Startup CEO',
+      role: 'Chief Executive',
+      company: 'Growing SaaS Company',
       avatar: 'https://i.pravatar.cc/100?img=3',
       rating: 5,
-      text: "Jason didn't just build an app; he created an experience. His gamification strategies and AI coaching integration increased our daily active users by 125%. Absolutely brilliant work!",
-      highlight: "125% increase in DAU",
-      projectType: 'Mobile Application'
+      text: "Jason's combination of AI expertise and enterprise sales experience is exactly what we needed. He speaks both languages - technical and business.",
+      highlight: "Bridges technical and business",
+      projectType: 'Business Strategy'
     },
     {
-      id: 'emma-watson',
-      name: 'Emma Watson',
-      role: 'Marketing Director',
-      company: 'GreenTech Solutions',
+      id: 'former-colleague',
+      name: 'Former AT&T Colleague',
+      role: 'Senior Manager',
+      company: 'Enterprise Technology',
       avatar: 'https://i.pravatar.cc/100?img=4',
       rating: 5,
-      text: "The website Jason created for us is a work of art that converts. Beautiful, fast, and intuitive. Our lead generation improved by 89% in the first quarter after launch.",
-      highlight: "89% more qualified leads",
-      projectType: 'Corporate Website'
+      text: "Jason consistently exceeded quotas and managed complex enterprise relationships. His transition to AI consulting is a natural fit for his skillset.",
+      highlight: "Consistently exceeded quotas",
+      projectType: 'Professional Reference'
     },
     {
-      id: 'david-kim',
-      name: 'David Kim',
-      role: 'CTO',
-      company: 'FinanceFlow',
+      id: 'robotics-partner',
+      name: 'Industry Partner',
+      role: 'Solutions Architect',
+      company: 'Robotics Integration',
       avatar: 'https://i.pravatar.cc/100?img=5',
       rating: 5,
-      text: "Jason's technical expertise is matched only by his business acumen. He built us a secure, scalable platform that handles millions in transactions daily. A true professional.",
-      highlight: "Millions in daily transactions",
-      projectType: 'Financial Platform'
+      text: "Jason's background at Wandelbots and deep AI knowledge make him a trusted advisor for automation projects. He understands both the technology and business impact.",
+      highlight: "Trusted automation advisor",
+      projectType: 'Strategic Partnership'
     }
   ];
 

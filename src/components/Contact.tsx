@@ -30,22 +30,22 @@ const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const projectTypes = [
-    'Process Automation',
-    'AI Chatbot',
-    'Sales Funnel Optimization',
-    'Lead Scoring System',
-    'Customer Service AI',
-    'Data Analytics AI',
-    'Custom AI Solution',
+    'AI Strategy Consultation',
+    'Process Automation Assessment',
+    'Enterprise AI Implementation',
+    'Executive Training & Workshops',
+    'Digital Transformation Planning',
+    'Custom AI Development',
+    'Ongoing AI Partnership',
     'Other'
   ];
 
   const budgetRanges = [
-    'Under $10k',
-    '$10k - $25k',
-    '$25k - $50k',
-    '$50k - $100k',
-    '$100k+'
+    'Under $5k',
+    '$5k - $15k',
+    '$15k - $35k',
+    '$35k - $75k',
+    '$75k+'
   ];
 
   const timelines = [
