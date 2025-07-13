@@ -22,58 +22,58 @@ const Services = () => {
 
   const tiers: ServiceTier[] = [
     {
-      name: 'Growth',
+      name: 'Quick Win',
       icon: <FaRocket />,
-      price: billingCycle === 'investment' ? '$3,000' : '$1,200',
-      period: billingCycle === 'investment' ? 'fixed investment' : 'monthly retainer',
-      description: 'For growing businesses ready to streamline operations',
+      price: billingCycle === 'investment' ? '$2,500' : '$900',
+      period: billingCycle === 'investment' ? 'one-time' : 'monthly',
+      description: 'Fast revenue impact for immediate business results',
       features: [
-        'Process automation assessment',
-        'Single workflow optimization',
-        'Basic AI implementation',
-        '2-week delivery',
-        'Knowledge transfer',
-        'Performance metrics'
+        '🎯 Single high-impact automation',
+        '⚡ 2-week implementation',
+        '📊 ROI tracking setup',
+        '📚 Complete documentation',
+        '🔧 30-day optimization',
+        '💰 Minimum 3x ROI guarantee'
       ],
-      cta: 'Get Started'
+      cta: 'Start Now'
     },
     {
-      name: 'Professional',
+      name: 'Revenue Accelerator',
       icon: <FaCrown />,
-      price: billingCycle === 'investment' ? '$8,000' : '$3,200',
-      period: billingCycle === 'investment' ? 'fixed investment' : 'monthly retainer',
-      description: 'Revenue-generating AI systems for established companies',
+      price: billingCycle === 'investment' ? '$7,500' : '$2,500',
+      period: billingCycle === 'investment' ? 'one-time' : 'monthly',
+      description: 'Complete revenue engine transformation',
       features: [
-        'Multi-process automation',
-        'Custom AI integrations',
-        'Advanced analytics',
-        '6-week implementation',
-        'Training & documentation',
-        'Ongoing support included',
-        'Backed by Fortune 500 experience',
-        'ROI tracking & optimization'
+        '🚀 Multi-system automation',
+        '🤖 Custom AI integrations',
+        '📈 Sales funnel optimization',
+        '⏰ 6-week full deployment',
+        '🎓 Team training included',
+        '🔄 90-day performance optimization',
+        '🏆 Fortune 500 methodologies',
+        '💎 Dedicated success manager'
       ],
       highlighted: true,
       popular: true,
       cta: 'Most Popular'
     },
     {
-      name: 'Enterprise',
+      name: 'Strategic Partnership',
       icon: <FaInfinity />,
-      price: '$25,000+',
-      period: 'strategic engagement',
-      description: 'C-suite strategic AI transformation partnerships',
+      price: billingCycle === 'investment' ? '$20,000+' : '$6,000+',
+      period: billingCycle === 'investment' ? 'project-based' : 'monthly',
+      description: 'Executive-level AI transformation partnership',
       features: [
-        'Enterprise-wide automation strategy',
-        'Executive-level consulting',
-        'Custom AI architecture design',
-        'Change management support',
-        'Phased implementation roadmap',
-        'Cross-functional team training',
-        'Drawing from $130M+ project experience',
-        'Ongoing strategic partnership'
+        '🎯 Enterprise-wide strategy',
+        '👔 C-suite consulting',
+        '🏗️ Custom architecture design',
+        '📋 Change management',
+        '🗺️ Multi-phase roadmap',
+        '🎯 Executive team training',
+        '💼 $130M+ project experience',
+        '🤝 Ongoing strategic advisor'
       ],
-      cta: 'Schedule Consultation'
+      cta: 'Book Strategy Call'
     }
   ];
 
