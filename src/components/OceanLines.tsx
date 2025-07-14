@@ -14,19 +14,19 @@ export function OceanLines() {
       >
         <defs>
           <linearGradient id="oceanGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" style={{ stopColor: '#818cf8', stopOpacity: 0.1 }} />
-            <stop offset="50%" style={{ stopColor: '#06b6d4', stopOpacity: 0.3 }} />
-            <stop offset="100%" style={{ stopColor: '#6b46c1', stopOpacity: 0.1 }} />
+            <stop offset="0%" style={{ stopColor: 'var(--quantum-glow)', stopOpacity: 0.1 }} />
+            <stop offset="50%" style={{ stopColor: 'var(--quantum-cyan)', stopOpacity: 0.3 }} />
+            <stop offset="100%" style={{ stopColor: 'var(--quantum-purple)', stopOpacity: 0.1 }} />
           </linearGradient>
           <linearGradient id="oceanGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" style={{ stopColor: '#6b46c1', stopOpacity: 0.08 }} />
-            <stop offset="50%" style={{ stopColor: '#818cf8', stopOpacity: 0.2 }} />
-            <stop offset="100%" style={{ stopColor: '#06b6d4', stopOpacity: 0.08 }} />
+            <stop offset="0%" style={{ stopColor: 'var(--quantum-purple)', stopOpacity: 0.08 }} />
+            <stop offset="50%" style={{ stopColor: 'var(--quantum-glow)', stopOpacity: 0.2 }} />
+            <stop offset="100%" style={{ stopColor: 'var(--quantum-cyan)', stopOpacity: 0.08 }} />
           </linearGradient>
           <linearGradient id="oceanGradient3" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" style={{ stopColor: '#06b6d4', stopOpacity: 0.05 }} />
-            <stop offset="50%" style={{ stopColor: '#6b46c1', stopOpacity: 0.15 }} />
-            <stop offset="100%" style={{ stopColor: '#818cf8', stopOpacity: 0.05 }} />
+            <stop offset="0%" style={{ stopColor: 'var(--quantum-cyan)', stopOpacity: 0.05 }} />
+            <stop offset="50%" style={{ stopColor: 'var(--quantum-purple)', stopOpacity: 0.15 }} />
+            <stop offset="100%" style={{ stopColor: 'var(--quantum-glow)', stopOpacity: 0.05 }} />
           </linearGradient>
         </defs>
         

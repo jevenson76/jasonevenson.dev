@@ -96,10 +96,10 @@ const TestimonialsSimple = () => {
             <div className="w-2 h-2 bg-[var(--quantum-glow)] rounded-full animate-pulse"></div>
             <span className="text-[var(--quantum-glow)] font-medium">Client Success Stories</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-7" style={{ fontWeight: 700 }}>
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-7">
             Trusted by Industry Leaders
           </h2>
-          <p className="text-2xl text-gray-200 max-w-4xl mx-auto font-extralight" style={{ fontWeight: 200 }}>
+          <p className="text-2xl text-gray-200 max-w-4xl mx-auto font-extralight">
             See how forward-thinking companies are using AI to dominate their markets
           </p>
         </motion.div>
@@ -127,19 +127,19 @@ const TestimonialsSimple = () => {
                   </div>
                 </div>
                 
-                <p className="text-lg text-gray-200 mb-5 leading-relaxed font-extralight" style={{ fontWeight: 200 }}>
+                <p className="text-lg text-gray-200 mb-5 leading-relaxed font-extralight">
                   "{testimonial.text}"
                 </p>
                 
                 <div className="border-t border-gray-700 pt-5">
                   <div className="flex justify-between items-start">
                     <div>
-                      <div className="font-light text-white" style={{ fontWeight: 300 }}>{testimonial.name}</div>
-                      <div className="text-[var(--quantum-glow)] text-base font-extralight" style={{ fontWeight: 200 }}>{testimonial.role}</div>
-                      <div className="text-gray-400 text-base font-extralight" style={{ fontWeight: 200 }}>{testimonial.company}</div>
+                      <div className="font-light text-white">{testimonial.name}</div>
+                      <div className="text-[var(--quantum-glow)] text-base font-extralight">{testimonial.role}</div>
+                      <div className="text-gray-400 text-base font-extralight">{testimonial.company}</div>
                     </div>
                     <div className="text-right">
-                      <div className="text-base text-purple-300 font-light" style={{ fontWeight: 300 }}>
+                      <div className="text-base text-purple-300 font-light">
                         {testimonial.highlight}
                       </div>
                     </div>

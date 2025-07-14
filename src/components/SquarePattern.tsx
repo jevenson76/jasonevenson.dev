@@ -85,18 +85,18 @@ export function SquarePattern() {
           
           {/* Gradient overlays for depth */}
           <radialGradient id="squareGradient1" cx="30%" cy="30%" r="70%">
-            <stop offset="0%" style={{ stopColor: '#a5b4fc', stopOpacity: 0.15 }} />
-            <stop offset="100%" style={{ stopColor: '#a5b4fc', stopOpacity: 0.03 }} />
+            <stop offset="0%" style={{ stopColor: 'var(--quantum-glow)', stopOpacity: 0.15 }} />
+            <stop offset="100%" style={{ stopColor: 'var(--quantum-glow)', stopOpacity: 0.03 }} />
           </radialGradient>
           
           <radialGradient id="squareGradient2" cx="70%" cy="70%" r="60%">
-            <stop offset="0%" style={{ stopColor: '#22d3ee', stopOpacity: 0.12 }} />
-            <stop offset="100%" style={{ stopColor: '#22d3ee', stopOpacity: 0.02 }} />
+            <stop offset="0%" style={{ stopColor: 'var(--quantum-cyan)', stopOpacity: 0.12 }} />
+            <stop offset="100%" style={{ stopColor: 'var(--quantum-cyan)', stopOpacity: 0.02 }} />
           </radialGradient>
           
           <radialGradient id="squareGradient3" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" style={{ stopColor: '#8b5cf6', stopOpacity: 0.08 }} />
-            <stop offset="100%" style={{ stopColor: '#8b5cf6', stopOpacity: 0.01 }} />
+            <stop offset="0%" style={{ stopColor: 'var(--quantum-purple)', stopOpacity: 0.08 }} />
+            <stop offset="100%" style={{ stopColor: 'var(--quantum-purple)', stopOpacity: 0.01 }} />
           </radialGradient>
         </defs>
         

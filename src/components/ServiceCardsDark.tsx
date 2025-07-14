@@ -123,10 +123,10 @@ export default function ServiceCardsDark() {
             <div className="w-2 h-2 bg-[var(--quantum-glow)] rounded-full animate-pulse"></div>
             <span className="text-[var(--quantum-glow)] font-medium">Enterprise Solutions</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-7" style={{ fontWeight: 700 }}>
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-7">
             AI-Powered Business Transformation
           </h2>
-          <p className="text-2xl text-gray-200 max-w-4xl mx-auto font-extralight" style={{ fontWeight: 200 }}>
+          <p className="text-2xl text-gray-200 max-w-4xl mx-auto font-extralight">
             Stop paying for consultants who deliver PowerPoints. Get <strong className="text-white font-normal">working systems</strong> that generate revenue from day one.
           </p>
         </motion.div>
@@ -149,16 +149,16 @@ export default function ServiceCardsDark() {
               <div className="relative z-10 flex flex-col h-full">
                 {/* Top section - Title, Description, Benefit */}
                 <div className="flex-grow">
-                  <h3 className="text-3xl font-bold text-[#38d266] mb-7 group-hover:text-[#38d266] transition-colors leading-tight text-center" style={{ fontWeight: 700 }}>
+                  <h3 className="text-3xl font-bold text-[var(--color-primary)] mb-7 group-hover:text-[var(--color-primary)] transition-colors leading-tight text-center">
                     {service.title}
                   </h3>
                   
-                  <p className="text-xl text-gray-200 mb-7 leading-relaxed font-extralight" style={{ fontWeight: 200 }}>
+                  <p className="text-xl text-gray-200 mb-7 leading-relaxed font-extralight">
                     {service.description}
                   </p>
                   
                   <div className="bg-gradient-to-r from-cyan-400/30 to-cyan-500/20 rounded-lg p-5 mb-7 border border-cyan-400/50">
-                    <p className="text-lg text-cyan-100 font-light text-center" style={{ fontWeight: 300 }}>
+                    <p className="text-lg text-cyan-100 font-light text-center">
                       {service.benefit}
                     </p>
                   </div>
@@ -167,7 +167,7 @@ export default function ServiceCardsDark() {
                     {service.features.map((feature, featureIdx) => (
                       <li key={featureIdx} className="flex items-start gap-3">
                         <div className="w-1.5 h-1.5 bg-[var(--quantum-glow)] rounded-full mt-2 flex-shrink-0" />
-                        <span className="text-gray-200 text-base leading-relaxed font-extralight" style={{ fontWeight: 200 }}>{feature}</span>
+                        <span className="text-gray-200 text-base leading-relaxed font-extralight">{feature}</span>
                       </li>
                     ))}
                   </ul>
@@ -176,12 +176,12 @@ export default function ServiceCardsDark() {
                 {/* Bottom section - Investment & Timeline */}
                 <div className="flex justify-between items-center pt-7 border-t border-gray-800 mt-auto">
                   <div className="text-center">
-                    <div className="text-3xl font-light text-white" style={{ fontWeight: 300 }}>{service.investment}</div>
-                    <div className="text-base text-gray-400 font-extralight" style={{ fontWeight: 200 }}>Investment</div>
+                    <div className="text-3xl font-light text-white">{service.investment}</div>
+                    <div className="text-base text-gray-400 font-extralight">Investment</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-light text-[var(--quantum-glow)]" style={{ fontWeight: 300 }}>{service.timeline}</div>
-                    <div className="text-base text-gray-400 font-extralight" style={{ fontWeight: 200 }}>Timeline</div>
+                    <div className="text-3xl font-light text-[var(--quantum-glow)]">{service.timeline}</div>
+                    <div className="text-base text-gray-400 font-extralight">Timeline</div>
                   </div>
                 </div>
               </div>
