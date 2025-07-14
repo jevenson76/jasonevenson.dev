@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export function HeroQuantum() {
   return (
-    <section className="relative flex items-center justify-center min-h-screen py-10 md:py-14 perspective-1000"
+    <section className="relative flex items-center justify-center min-h-screen py-10 md:py-14 perspective-1000">
       {/* Clean geometric background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Radial gradient backdrop */}
