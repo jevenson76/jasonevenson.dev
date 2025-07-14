@@ -35,7 +35,7 @@ export function HeroQuantum() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <span className="bg-gradient-to-r from-white via-[var(--quantum-glow)] to-[var(--quantum-cyan)] bg-clip-text text-transparent">
+          <span className="text-[var(--quantum-glow)]">
             Jason Evenson
           </span>
         </motion.h1>
