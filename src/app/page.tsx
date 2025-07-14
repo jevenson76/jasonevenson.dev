@@ -6,14 +6,14 @@ import Services from '@/components/Services';
 import TestimonialsSimple from '@/components/TestimonialsSimple';
 import { FreeResource } from '@/components/FreeResource';
 import { Contact } from '@/components/Contact';
-import Deliverables from '@/components/Deliverables';
+import ServiceCardsDark from '@/components/ServiceCardsDark';
 
 export default function Page() {
   return (
     <>
       <HeroQuantum />
       <ResultsStrip />
-      <Deliverables />
+      <ServiceCardsDark />
       <Services />
       <TestimonialsSimple />
       <FreeResource />
