@@ -149,7 +149,7 @@ export default function ServiceCardsDark() {
               <div className="relative z-10 flex flex-col h-full">
                 {/* Top section - Title, Description, Benefit */}
                 <div className="flex-grow">
-                  <h3 className="text-3xl font-bold text-[#38d266] mb-7 group-hover:text-[#38d266] transition-colors leading-tight text-center" style={{ fontWeight: 700 }}>
+                  <h3 className="text-3xl font-bold text-[var(--color-primary)] mb-7 group-hover:text-[var(--color-primary)] transition-colors leading-tight text-center" style={{ fontWeight: 700 }}>
                     {service.title}
                   </h3>
                   
