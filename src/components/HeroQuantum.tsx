@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export function HeroQuantum() {
   return (
-    <section className="relative flex items-center justify-center min-h-screen py-16 md:py-24 perspective-1000">
+    <section className="relative flex items-center justify-center min-h-screen py-16 md:py-20 perspective-1000">
       {/* Clean geometric background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Radial gradient backdrop */}
@@ -31,6 +31,7 @@ export function HeroQuantum() {
       <div className="absolute z-20 text-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h1
           className="text-5xl md:text-7xl font-thin tracking-widest uppercase"
+          style={{ fontFamily: 'Inter, sans-serif' }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}

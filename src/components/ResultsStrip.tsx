@@ -13,7 +13,7 @@ const ResultsStrip = () => {
   ];
 
   return (
-    <section className="relative py-16 md:py-24 overflow-hidden bg-gradient-to-r from-purple-900 via-blue-900 to-purple-900">
+    <section className="relative py-8 md:py-12 overflow-hidden bg-gradient-to-r from-purple-900 via-blue-900 to-purple-900">
       {/* Animated background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-black/20" />

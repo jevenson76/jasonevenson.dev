@@ -1,10 +1,67 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
   <defs>
     <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#00ab19;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#66d8fa;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#818cf8;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#6b46c1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0e27;stop-opacity:1" />
     </linearGradient>
+    <linearGradient id="inner-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.9" />
+      <stop offset="50%" style="stop-color:#818cf8;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#6b46c1;stop-opacity:0.9" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
-  <rect width="128" height="128" rx="16" fill="url(#gradient)"/>
-  <text x="64" y="80" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white">JE</text>
+  
+  <!-- Background -->
+  <rect width="128" height="128" rx="20" fill="url(#gradient)"/>
+  
+  <!-- AI/Quantum inspired geometric pattern -->
+  <g transform="translate(64,64)">
+    <!-- Outer hexagon -->
+    <polygon points="-20,-35 20,-35 40,0 20,35 -20,35 -40,0" 
+             fill="none" 
+             stroke="url(#inner-gradient)" 
+             stroke-width="3" 
+             filter="url(#glow)"/>
+    
+    <!-- Inner hexagon -->
+    <polygon points="-12,-21 12,-21 24,0 12,21 -12,21 -24,0" 
+             fill="none" 
+             stroke="url(#inner-gradient)" 
+             stroke-width="2" 
+             opacity="0.8"/>
+    
+    <!-- Connecting lines -->
+    <line x1="-20" y1="-35" x2="20" y2="35" stroke="url(#inner-gradient)" stroke-width="2" opacity="0.6"/>
+    <line x1="20" y1="-35" x2="-20" y2="35" stroke="url(#inner-gradient)" stroke-width="2" opacity="0.6"/>
+    <line x1="-40" y1="0" x2="40" y2="0" stroke="url(#inner-gradient)" stroke-width="2" opacity="0.6"/>
+    
+    <!-- Central core -->
+    <circle cx="0" cy="0" r="8" fill="url(#inner-gradient)" filter="url(#glow)"/>
+    <circle cx="0" cy="0" r="4" fill="#ffffff" opacity="0.9"/>
+    
+    <!-- Corner accent dots -->
+    <circle cx="-20" cy="-35" r="3" fill="#818cf8" filter="url(#glow)"/>
+    <circle cx="20" cy="-35" r="3" fill="#06b6d4" filter="url(#glow)"/>
+    <circle cx="40" cy="0" r="3" fill="#6b46c1" filter="url(#glow)"/>
+    <circle cx="20" cy="35" r="3" fill="#818cf8" filter="url(#glow)"/>
+    <circle cx="-20" cy="35" r="3" fill="#06b6d4" filter="url(#glow)"/>
+    <circle cx="-40" cy="0" r="3" fill="#6b46c1" filter="url(#glow)"/>
+    
+    <!-- Inner accent dots -->
+    <circle cx="-12" cy="-21" r="2" fill="#ffffff" opacity="0.8"/>
+    <circle cx="12" cy="-21" r="2" fill="#ffffff" opacity="0.8"/>
+    <circle cx="24" cy="0" r="2" fill="#ffffff" opacity="0.8"/>
+    <circle cx="12" cy="21" r="2" fill="#ffffff" opacity="0.8"/>
+    <circle cx="-12" cy="21" r="2" fill="#ffffff" opacity="0.8"/>
+    <circle cx="-24" cy="0" r="2" fill="#ffffff" opacity="0.8"/>
+  </g>
 </svg>

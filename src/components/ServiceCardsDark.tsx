@@ -17,6 +17,8 @@ const services = [
       'Intelligent content generation at scale',
       'Real-time competitive intelligence',
     ],
+    investment: '$25,000',
+    timeline: '6-8 weeks',
   },
   {
     title: 'Process Automation',
@@ -31,6 +33,8 @@ const services = [
       'Smart inventory & supply chain management',
       'Real-time performance monitoring dashboards',
     ],
+    investment: '$18,000',
+    timeline: '4-6 weeks',
   },
   {
     title: 'Growth Engine',
@@ -45,6 +49,8 @@ const services = [
       'Predictive inventory management',
       'Executive KPI dashboards with AI insights',
     ],
+    investment: '$35,000',
+    timeline: '8-12 weeks',
   },
   {
     title: 'Enterprise Integration',
@@ -59,6 +65,8 @@ const services = [
       'Secure API ecosystem development',
       'Enterprise-grade security implementation',
     ],
+    investment: '$45,000',
+    timeline: '12-16 weeks',
   },
   {
     title: 'Custom AI Solutions',
@@ -73,6 +81,8 @@ const services = [
       'Blockchain integration for transparency',
       'Scalable cloud-native architecture',
     ],
+    investment: '$65,000',
+    timeline: '16-24 weeks',
   },
   {
     title: 'AI Strategy',
@@ -87,6 +97,8 @@ const services = [
       'ROI measurement & optimization',
       'Innovation pipeline development',
     ],
+    investment: '$15,000',
+    timeline: '4-6 weeks',
   },
 ];
 
@@ -149,7 +161,7 @@ export default function ServiceCardsDark() {
                   </p>
                 </div>
                 
-                <ul className="space-y-3">
+                <ul className="space-y-3 mb-6">
                   {service.features.map((feature, featureIdx) => (
                     <li key={featureIdx} className="flex items-start gap-3">
                       <div className="w-1.5 h-1.5 bg-[var(--quantum-glow)] rounded-full mt-2 flex-shrink-0" />
@@ -157,6 +169,18 @@ export default function ServiceCardsDark() {
                     </li>
                   ))}
                 </ul>
+                
+                {/* Investment & Timeline */}
+                <div className="flex justify-between items-center pt-6 border-t border-gray-800">
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-white">{service.investment}</div>
+                    <div className="text-sm text-gray-400">Investment</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-[var(--quantum-glow)]">{service.timeline}</div>
+                    <div className="text-sm text-gray-400">Timeline</div>
+                  </div>
+                </div>
               </div>
 
               {/* Premium corner accent */}

@@ -129,9 +129,9 @@ const ContentCreationServices = () => {
           viewport={{ once: true }}
           className="text-center mb-16 md:mb-20"
         >
-          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#38d266]/20 to-[#38d266]/20 rounded-full px-6 py-2 mb-6 border border-[#38d266]/30">
-            <div className="w-2 h-2 bg-[#38d266] rounded-full animate-pulse"></div>
-            <span className="text-[#38d266] font-medium">Content Creation Systems</span>
+          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-cyan-500/20 to-gray-400/20 rounded-full px-6 py-2 mb-6 border border-cyan-400/30">
+            <div className="w-2 h-2 bg-gradient-to-r from-cyan-400 to-gray-300 rounded-full animate-pulse"></div>
+            <span className="text-transparent bg-gradient-to-r from-cyan-400 to-gray-300 bg-clip-text font-medium">Content Creation Systems</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Solopreneur Content Domination
@@ -150,19 +150,19 @@ const ContentCreationServices = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group relative bg-black rounded-2xl p-8 border border-gray-800 hover:border-[#38d266]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(56,210,102,0.3)]"
+              className="group relative bg-black rounded-2xl p-8 border border-gray-800 hover:border-cyan-400/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(6,182,212,0.3)]"
             >
               {/* Icon */}
               <div className="flex justify-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#38d266]/20 to-[#38d266]/10 rounded-full flex items-center justify-center border border-[#38d266]/30">
-                  <div className="text-[#38d266] text-2xl">
+                <div className="w-16 h-16 bg-gradient-to-br from-cyan-500/20 to-gray-400/10 rounded-full flex items-center justify-center border border-cyan-400/30">
+                  <div className="text-cyan-400 text-2xl">
                     {service.icon}
                   </div>
                 </div>
               </div>
 
               {/* Title */}
-              <h3 className="text-2xl font-bold text-[#38d266] mb-4 group-hover:text-[#38d266] transition-colors leading-tight text-center">
+              <h3 className="text-2xl font-bold text-transparent bg-gradient-to-r from-cyan-400 to-gray-300 bg-clip-text mb-4 transition-colors leading-tight text-center">
                 {service.title}
               </h3>
 
@@ -172,8 +172,8 @@ const ContentCreationServices = () => {
               </p>
 
               {/* Outcome */}
-              <div className="bg-gradient-to-r from-[#38d266]/20 to-[#38d266]/10 rounded-lg p-4 mb-6 border border-[#38d266]/30">
-                <p className="text-[#38d266] font-semibold text-center">
+              <div className="bg-gradient-to-r from-cyan-500/20 to-gray-400/10 rounded-lg p-4 mb-6 border border-cyan-400/30">
+                <p className="text-transparent bg-gradient-to-r from-cyan-400 to-gray-300 bg-clip-text font-semibold text-center">
                   {service.outcome}
                 </p>
               </div>
@@ -184,7 +184,7 @@ const ContentCreationServices = () => {
                 <ul className="space-y-2">
                   {service.deliverables.map((item, idx) => (
                     <li key={idx} className="flex items-start gap-3">
-                      <div className="w-1.5 h-1.5 bg-[#38d266] rounded-full mt-2 flex-shrink-0" />
+                      <div className="w-1.5 h-1.5 bg-gradient-to-r from-cyan-400 to-gray-300 rounded-full mt-2 flex-shrink-0" />
                       <span className="text-gray-300 text-sm leading-relaxed">{item}</span>
                     </li>
                   ))}
@@ -198,13 +198,13 @@ const ContentCreationServices = () => {
                   <div className="text-sm text-gray-400">Investment</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-[#38d266]">{service.timeline}</div>
+                  <div className="text-2xl font-bold text-transparent bg-gradient-to-r from-cyan-400 to-gray-300 bg-clip-text">{service.timeline}</div>
                   <div className="text-sm text-gray-400">Timeline</div>
                 </div>
               </div>
 
               {/* Premium corner accent */}
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-[#38d266]/10 to-transparent rounded-tr-2xl"></div>
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-cyan-400/10 to-transparent rounded-tr-2xl"></div>
             </motion.div>
           ))}
         </div>
@@ -222,7 +222,7 @@ const ContentCreationServices = () => {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-[#38d266] to-[#38d266] hover:from-[#38d266]/90 hover:to-[#38d266]/90 text-black px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:shadow-[0_0_30px_rgba(56,210,102,0.5)] hover:scale-105"
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-cyan-400 to-gray-300 hover:from-cyan-500 hover:to-gray-400 text-black px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] hover:scale-105"
           >
             Get Your Content System
           </a>

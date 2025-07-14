@@ -15,9 +15,9 @@ export default function Page() {
       <ResultsStrip />
       <ServiceCardsDark />
       <ContentCreationServices />
-      <TestimonialsSimple />
       <FreeResource />
       <Contact />
+      <TestimonialsSimple />
     </>
   );
 }

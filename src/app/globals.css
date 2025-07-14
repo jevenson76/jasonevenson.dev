@@ -22,7 +22,8 @@
 }
 
 html,body {
-  @apply bg-[var(--quantum-deep)] text-[#f0f9ff] font-sans;
+  @apply bg-[var(--quantum-deep)] text-[#f0f9ff];
+  font-family: 'Inter', sans-serif;
 }
 
 /* Particle field */
