@@ -133,10 +133,10 @@ const ContentCreationServices = () => {
             <div className="w-2 h-2 bg-gradient-to-r from-cyan-400 to-gray-300 rounded-full animate-pulse"></div>
             <span className="text-transparent bg-gradient-to-r from-cyan-400 to-gray-300 bg-clip-text font-medium">Content Creation Systems</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-7" style={{ fontWeight: 700 }}>
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-7">
             Solopreneur Content Domination
           </h2>
-          <p className="text-2xl text-gray-200 max-w-4xl mx-auto font-extralight" style={{ fontWeight: 200 }}>
+          <p className="text-2xl text-gray-200 max-w-4xl mx-auto font-extralight">
             Stop trading time for content. Get <strong className="text-white font-normal">AI-powered systems</strong> that create endless high-quality content while you focus on what matters most.
           </p>
         </motion.div>
@@ -164,18 +164,18 @@ const ContentCreationServices = () => {
               {/* Title */}
               {/* Top section - Icon, Title, Description, Outcome */}
               <div className="flex-grow">
-                <h3 className="text-3xl font-bold text-transparent bg-gradient-to-r from-cyan-400 to-gray-300 bg-clip-text mb-5 transition-colors leading-tight text-center" style={{ fontWeight: 700 }}>
+                <h3 className="text-3xl font-bold text-transparent bg-gradient-to-r from-cyan-400 to-gray-300 bg-clip-text mb-5 transition-colors leading-tight text-center">
                   {service.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-xl text-gray-200 mb-7 leading-relaxed text-center font-extralight" style={{ fontWeight: 200 }}>
+                <p className="text-xl text-gray-200 mb-7 leading-relaxed text-center font-extralight">
                   {service.description}
                 </p>
 
                 {/* Outcome */}
                 <div className="bg-gradient-to-r from-cyan-400/30 to-cyan-500/20 rounded-lg p-5 mb-7 border border-cyan-400/50">
-                  <p className="text-lg text-transparent bg-gradient-to-r from-cyan-300 to-cyan-400 bg-clip-text font-light text-center" style={{ fontWeight: 300 }}>
+                  <p className="text-lg text-transparent bg-gradient-to-r from-cyan-300 to-cyan-400 bg-clip-text font-light text-center">
                     {service.outcome}
                   </p>
                 </div>
@@ -186,7 +186,7 @@ const ContentCreationServices = () => {
                     {service.deliverables.map((item, idx) => (
                       <li key={idx} className="flex items-start gap-3">
                         <div className="w-1.5 h-1.5 bg-gradient-to-r from-cyan-400 to-gray-300 rounded-full mt-2 flex-shrink-0" />
-                        <span className="text-gray-200 text-base leading-relaxed font-extralight" style={{ fontWeight: 200 }}>{item}</span>
+                        <span className="text-gray-200 text-base leading-relaxed font-extralight">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -196,12 +196,12 @@ const ContentCreationServices = () => {
               {/* Bottom section - Investment & Timeline */}
               <div className="flex justify-between items-center pt-5 border-t border-gray-800 mt-auto">
                 <div className="text-center">
-                  <div className="text-3xl font-light text-white" style={{ fontWeight: 300 }}>{service.investment}</div>
-                  <div className="text-base text-gray-400 font-extralight" style={{ fontWeight: 200 }}>Investment</div>
+                  <div className="text-3xl font-light text-white">{service.investment}</div>
+                  <div className="text-base text-gray-400 font-extralight">Investment</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-light text-transparent bg-gradient-to-r from-cyan-400 to-gray-300 bg-clip-text" style={{ fontWeight: 300 }}>{service.timeline}</div>
-                  <div className="text-base text-gray-400 font-extralight" style={{ fontWeight: 200 }}>Timeline</div>
+                  <div className="text-3xl font-light text-transparent bg-gradient-to-r from-cyan-400 to-gray-300 bg-clip-text">{service.timeline}</div>
+                  <div className="text-base text-gray-400 font-extralight">Timeline</div>
                 </div>
               </div>
 
