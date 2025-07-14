@@ -119,14 +119,14 @@ export default function ServiceCardsDark() {
           viewport={{ once: true }}
           className="text-center mb-19 md:mb-24"
         >
-          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-full px-6 py-2 mb-6 border border-[var(--quantum-glow)]/30">
-            <div className="w-2 h-2 bg-[var(--quantum-glow)] rounded-full animate-pulse"></div>
-            <span className="text-[var(--quantum-glow)] font-medium">Enterprise Solutions</span>
+          <div className="inline-flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-full px-6 py-2.5 mb-8 border border-[var(--quantum-glow)]/30 backdrop-blur-sm">
+            <div className="w-2.5 h-2.5 bg-[var(--quantum-glow)] rounded-full flex-shrink-0 animate-pulse" />
+            <span className="text-[var(--quantum-glow)] font-medium leading-none">Enterprise Solutions</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-7">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-7 max-w-4xl mx-auto leading-tight">
             AI-Powered Business Transformation
           </h2>
-          <p className="text-2xl text-gray-200 max-w-4xl mx-auto font-extralight">
+          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto font-extralight leading-relaxed">
             Stop paying for consultants who deliver PowerPoints. Get <strong className="text-white font-normal">working systems</strong> that generate revenue from day one.
           </p>
         </motion.div>
@@ -140,7 +140,7 @@ export default function ServiceCardsDark() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
-              className="group relative bg-gray-900 rounded-2xl p-10 border border-gray-800 hover:border-[var(--quantum-glow)]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.3)] flex flex-col justify-between h-full"
+              className="group relative bg-gray-900 rounded-2xl p-10 md:p-12 border border-gray-800 hover:border-[var(--quantum-glow)]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.3)] flex flex-col justify-between h-full"
             >
               {/* Quantum glow effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-[var(--quantum-glow)]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -149,16 +149,16 @@ export default function ServiceCardsDark() {
               <div className="relative z-10 flex flex-col h-full">
                 {/* Top section - Title, Description, Benefit */}
                 <div className="flex-grow">
-                  <h3 className="text-3xl font-bold text-[var(--color-primary)] mb-7 group-hover:text-[var(--color-primary)] transition-colors leading-tight text-center">
+                  <h3 className="text-3xl font-bold text-[var(--quantum-glow)] mb-7 group-hover:text-[var(--quantum-glow)] transition-colors leading-tight text-left">
                     {service.title}
                   </h3>
                   
-                  <p className="text-xl text-gray-200 mb-7 leading-relaxed font-extralight">
+                  <p className="text-xl text-gray-300 mb-7 leading-relaxed font-extralight">
                     {service.description}
                   </p>
                   
-                  <div className="bg-gradient-to-r from-cyan-400/30 to-cyan-500/20 rounded-lg p-5 mb-7 border border-cyan-400/50">
-                    <p className="text-lg text-cyan-100 font-light text-center">
+                  <div className="bg-gradient-to-r from-cyan-400/30 to-cyan-500/20 rounded-lg p-5 mb-7 border border-cyan-400/50 min-h-[96px] flex items-center">
+                    <p className="text-lg text-cyan-100 font-light">
                       {service.benefit}
                     </p>
                   </div>
@@ -167,7 +167,7 @@ export default function ServiceCardsDark() {
                     {service.features.map((feature, featureIdx) => (
                       <li key={featureIdx} className="flex items-start gap-3">
                         <div className="w-1.5 h-1.5 bg-[var(--quantum-glow)] rounded-full mt-2 flex-shrink-0" />
-                        <span className="text-gray-200 text-base leading-relaxed font-extralight">{feature}</span>
+                        <span className="text-gray-300 text-base leading-relaxed font-extralight">{feature}</span>
                       </li>
                     ))}
                   </ul>
