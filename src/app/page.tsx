@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { HeroQuantum } from '@/components/HeroQuantum';
 import { ResultsStrip } from '@/components/ResultsStrip';
 import Services from '@/components/Services';
-import Testimonials from '@/components/Testimonials';
+import TestimonialsSimple from '@/components/TestimonialsSimple';
 import { FreeResource } from '@/components/FreeResource';
 import { Contact } from '@/components/Contact';
 import Deliverables from '@/components/Deliverables';
@@ -15,7 +15,7 @@ export default function Page() {
       <ResultsStrip />
       <Deliverables />
       <Services />
-      <Testimonials />
+      <TestimonialsSimple />
       <FreeResource />
       <Contact />
     </>
