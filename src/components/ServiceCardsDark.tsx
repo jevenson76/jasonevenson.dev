@@ -104,7 +104,7 @@ const services = [
 
 export default function ServiceCardsDark() {
   return (
-    <section className="py-16 md:py-24 bg-black relative overflow-hidden">
+    <section className="py-19 md:py-29 bg-black relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-gray-900/20 via-transparent to-gray-800/20" />
@@ -117,22 +117,22 @@ export default function ServiceCardsDark() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16 md:mb-20"
+          className="text-center mb-19 md:mb-24"
         >
           <div className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-full px-6 py-2 mb-6 border border-[var(--quantum-glow)]/30">
             <div className="w-2 h-2 bg-[var(--quantum-glow)] rounded-full animate-pulse"></div>
             <span className="text-[var(--quantum-glow)] font-medium">Enterprise Solutions</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-light text-white mb-6" style={{ fontWeight: 300 }}>
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-7" style={{ fontWeight: 700 }}>
             AI-Powered Business Transformation
           </h2>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto font-extralight" style={{ fontWeight: 200 }}>
+          <p className="text-2xl text-gray-200 max-w-4xl mx-auto font-extralight" style={{ fontWeight: 200 }}>
             Stop paying for consultants who deliver PowerPoints. Get <strong className="text-white font-normal">working systems</strong> that generate revenue from day one.
           </p>
         </motion.div>
 
         {/* Service Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12">
           {services.map((service, idx) => (
             <motion.div
               key={idx}
@@ -140,45 +140,45 @@ export default function ServiceCardsDark() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
-              className="group relative bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-[var(--quantum-glow)]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.3)] flex flex-col h-full"
+              className="group relative bg-gray-900 rounded-2xl p-10 border border-gray-800 hover:border-[var(--quantum-glow)]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.3)] flex flex-col h-full"
             >
               {/* Quantum glow effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-[var(--quantum-glow)]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               
               {/* Content */}
               <div className="relative z-10 flex flex-col h-full">
-                <h3 className="text-2xl font-light text-[#38d266] mb-6 group-hover:text-[#38d266] transition-colors leading-tight text-center" style={{ fontWeight: 300 }}>
+                <h3 className="text-3xl font-bold text-[#38d266] mb-7 group-hover:text-[#38d266] transition-colors leading-tight text-center" style={{ fontWeight: 700 }}>
                   {service.title}
                 </h3>
                 
-                <p className="text-gray-200 mb-6 leading-relaxed font-extralight" style={{ fontWeight: 200 }}>
+                <p className="text-xl text-gray-200 mb-7 leading-relaxed font-extralight" style={{ fontWeight: 200 }}>
                   {service.description}
                 </p>
                 
-                <div className="bg-gradient-to-r from-purple-400/20 to-blue-400/20 rounded-lg p-4 mb-6 border border-[var(--quantum-glow)]/30">
-                  <p className="text-[var(--quantum-glow)] font-light text-center" style={{ fontWeight: 300 }}>
+                <div className="bg-gradient-to-r from-cyan-300/40 to-cyan-400/30 rounded-lg p-5 mb-7 border border-cyan-300/70">
+                  <p className="text-lg text-cyan-100 font-light text-center" style={{ fontWeight: 300 }}>
                     {service.benefit}
                   </p>
                 </div>
                 
-                <ul className="space-y-3 mb-6 flex-grow">
+                <ul className="space-y-4 mb-7 flex-grow">
                   {service.features.map((feature, featureIdx) => (
                     <li key={featureIdx} className="flex items-start gap-3">
                       <div className="w-1.5 h-1.5 bg-[var(--quantum-glow)] rounded-full mt-2 flex-shrink-0" />
-                      <span className="text-gray-200 text-sm leading-relaxed font-extralight" style={{ fontWeight: 200 }}>{feature}</span>
+                      <span className="text-gray-200 text-base leading-relaxed font-extralight" style={{ fontWeight: 200 }}>{feature}</span>
                     </li>
                   ))}
                 </ul>
                 
                 {/* Investment & Timeline */}
-                <div className="flex justify-between items-center pt-6 border-t border-gray-800 mt-auto">
+                <div className="flex justify-between items-center pt-7 border-t border-gray-800 mt-auto">
                   <div className="text-center">
-                    <div className="text-2xl font-light text-white" style={{ fontWeight: 300 }}>{service.investment}</div>
-                    <div className="text-sm text-gray-400 font-extralight" style={{ fontWeight: 200 }}>Investment</div>
+                    <div className="text-3xl font-light text-white" style={{ fontWeight: 300 }}>{service.investment}</div>
+                    <div className="text-base text-gray-400 font-extralight" style={{ fontWeight: 200 }}>Investment</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-light text-[var(--quantum-glow)]" style={{ fontWeight: 300 }}>{service.timeline}</div>
-                    <div className="text-sm text-gray-400 font-extralight" style={{ fontWeight: 200 }}>Timeline</div>
+                    <div className="text-3xl font-light text-[var(--quantum-glow)]" style={{ fontWeight: 300 }}>{service.timeline}</div>
+                    <div className="text-base text-gray-400 font-extralight" style={{ fontWeight: 200 }}>Timeline</div>
                   </div>
                 </div>
               </div>
@@ -195,16 +195,16 @@ export default function ServiceCardsDark() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.8 }}
-          className="text-center mt-16 md:mt-20"
+          className="text-center mt-19 md:mt-24"
         >
           <p className="text-gray-300 mb-6">
             Ready to see what's possible for your business?
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.5)] hover:scale-105"
+            className="inline-flex items-center gap-4 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-10 py-5 rounded-full font-semibold transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.5)] hover:scale-105"
           >
-            Schedule Your Strategy Session
+            <span className="text-xl font-bold uppercase tracking-wide">SCHEDULE YOUR STRATEGY SESSION</span>
           </a>
         </motion.div>
       </div>

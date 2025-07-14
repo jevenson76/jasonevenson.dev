@@ -25,8 +25,6 @@ export function SquarePattern() {
       squares.push(
         <motion.rect
           key={`${row}-${col}`}
-          x={x}
-          y={y}
           width={gridSize - 1}
           height={gridSize - 1}
           fill="none"
@@ -42,24 +40,24 @@ export function SquarePattern() {
             opacity: [0.08, 0.18, 0.08],
             x: [
               x,
-              x + Math.sin(delay) * waveAmplitude,
-              x + Math.sin(delay + Math.PI) * waveAmplitude,
+              x + Math.sin(delay + row * 0.1) * waveAmplitude,
+              x + Math.sin(delay + row * 0.1 + Math.PI) * waveAmplitude,
               x
             ],
             y: [
               y,
-              y + Math.cos(delay) * waveAmplitude * 0.5,
-              y + Math.cos(delay + Math.PI) * waveAmplitude * 0.5,
+              y + Math.cos(delay + col * 0.1) * waveAmplitude * 0.5,
+              y + Math.cos(delay + col * 0.1 + Math.PI) * waveAmplitude * 0.5,
               y
             ],
             rotate: [0, 2, -2, 0],
             strokeWidth: [0.5, 0.8, 0.5]
           }}
           transition={{
-            duration: 12 + Math.random() * 6,
+            duration: 8 + (row + col) * 0.1,
             repeat: Infinity,
             ease: "easeInOut",
-            delay: delay % 8
+            delay: (row + col) * 0.05
           }}
         />
       );
@@ -112,15 +110,11 @@ export function SquarePattern() {
           fill="url(#squareGradient1)"
           animate={{
             opacity: [0.4, 0.8, 0.4],
-            transform: [
-              "translate(0px, 0px)",
-              "translate(20px, 10px)",
-              "translate(-10px, 15px)",
-              "translate(0px, 0px)"
-            ]
+            x: [0, 30, -20, 0],
+            y: [0, 15, 25, 0]
           }}
           transition={{
-            duration: 15,
+            duration: 12,
             repeat: Infinity,
             ease: "easeInOut"
           }}
@@ -132,18 +126,14 @@ export function SquarePattern() {
           fill="url(#squareGradient2)"
           animate={{
             opacity: [0.3, 0.7, 0.3],
-            transform: [
-              "translate(0px, 0px)",
-              "translate(-15px, 20px)",
-              "translate(25px, -5px)",
-              "translate(0px, 0px)"
-            ]
+            x: [0, -25, 35, 0],
+            y: [0, 20, -10, 0]
           }}
           transition={{
-            duration: 18,
+            duration: 15,
             repeat: Infinity,
             ease: "easeInOut",
-            delay: 3
+            delay: 2
           }}
         />
         
@@ -153,60 +143,18 @@ export function SquarePattern() {
           fill="url(#squareGradient3)"
           animate={{
             opacity: [0.2, 0.6, 0.2],
-            transform: [
-              "translate(0px, 0px)",
-              "translate(10px, -20px)",
-              "translate(-20px, 10px)",
-              "translate(0px, 0px)"
-            ]
+            x: [0, 15, -30, 0],
+            y: [0, -25, 20, 0]
           }}
           transition={{
-            duration: 20,
+            duration: 18,
             repeat: Infinity,
             ease: "easeInOut",
-            delay: 6
+            delay: 4
           }}
         />
         
-        {/* Floating accent squares with blanket-like motion */}
-        {[...Array(20)].map((_, i) => {
-          const baseX = Math.random() * 1400;
-          const baseY = Math.random() * 800;
-          return (
-            <motion.rect
-              key={i}
-              x={baseX}
-              y={baseY}
-              width="3"
-              height="3"
-              fill="#a5b4fc"
-              initial={{ opacity: 0 }}
-              animate={{
-                opacity: [0, 0.6, 0],
-                x: [
-                  baseX,
-                  baseX + Math.sin(i) * 50,
-                  baseX + Math.cos(i) * 30,
-                  baseX
-                ],
-                y: [
-                  baseY,
-                  baseY + Math.cos(i) * 30,
-                  baseY + Math.sin(i) * 40,
-                  baseY
-                ],
-                rotate: [0, 45, -45, 0],
-                scale: [1, 1.5, 0.8, 1]
-              }}
-              transition={{
-                duration: 20 + Math.random() * 15,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: i * 1.5
-              }}
-            />
-          );
-        })}
+        {/* Remove floating dots */}
       </svg>
     </div>
   );

@@ -80,7 +80,7 @@ const TestimonialsSimple = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-gray-900 relative overflow-hidden">
+    <section className="py-19 md:py-29 bg-gray-900 relative overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/50" />
       </div>
@@ -90,23 +90,23 @@ const TestimonialsSimple = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16 md:mb-20"
+          className="text-center mb-19 md:mb-24"
         >
           <div className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-full px-6 py-2 mb-6 border border-[var(--quantum-glow)]/30">
             <div className="w-2 h-2 bg-[var(--quantum-glow)] rounded-full animate-pulse"></div>
             <span className="text-[var(--quantum-glow)] font-medium">Client Success Stories</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-light text-white mb-6" style={{ fontWeight: 300 }}>
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-7" style={{ fontWeight: 700 }}>
             Trusted by Industry Leaders
           </h2>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto font-extralight" style={{ fontWeight: 200 }}>
+          <p className="text-2xl text-gray-200 max-w-4xl mx-auto font-extralight" style={{ fontWeight: 200 }}>
             See how forward-thinking companies are using AI to dominate their markets
           </p>
         </motion.div>
 
         {/* Vertical Scrolling Testimonials */}
         <div className="max-w-4xl mx-auto">
-          <div className="h-[600px] overflow-y-auto scrollbar-hide space-y-6 pr-2">
+          <div className="h-[720px] overflow-y-auto scrollbar-hide space-y-7 pr-2">
             {testimonials.map((testimonial, index) => (
               <motion.div
                 key={index}
@@ -114,32 +114,32 @@ const TestimonialsSimple = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-gray-800 rounded-xl p-6 border border-gray-700/50 hover:border-[var(--quantum-glow)]/30 transition-all duration-300"
+                className="bg-gray-800 rounded-xl p-7 border border-gray-700/50 hover:border-[var(--quantum-glow)]/30 transition-all duration-300"
               >
-                <div className="flex items-start justify-between mb-4">
+                <div className="flex items-start justify-between mb-5">
                   <div className="flex gap-1">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <FaStar key={i} className="text-yellow-400" />
                     ))}
                   </div>
-                  <div className="text-xs text-[var(--quantum-glow)] bg-[var(--quantum-glow)]/10 px-3 py-1 rounded-full border border-[var(--quantum-glow)]/20">
+                  <div className="text-sm text-[var(--quantum-glow)] bg-[var(--quantum-glow)]/10 px-4 py-1 rounded-full border border-[var(--quantum-glow)]/20">
                     {testimonial.service}
                   </div>
                 </div>
                 
-                <p className="text-gray-200 mb-4 leading-relaxed font-extralight" style={{ fontWeight: 200 }}>
+                <p className="text-lg text-gray-200 mb-5 leading-relaxed font-extralight" style={{ fontWeight: 200 }}>
                   "{testimonial.text}"
                 </p>
                 
-                <div className="border-t border-gray-700 pt-4">
+                <div className="border-t border-gray-700 pt-5">
                   <div className="flex justify-between items-start">
                     <div>
                       <div className="font-light text-white" style={{ fontWeight: 300 }}>{testimonial.name}</div>
-                      <div className="text-[var(--quantum-glow)] text-sm font-extralight" style={{ fontWeight: 200 }}>{testimonial.role}</div>
-                      <div className="text-gray-400 text-sm font-extralight" style={{ fontWeight: 200 }}>{testimonial.company}</div>
+                      <div className="text-[var(--quantum-glow)] text-base font-extralight" style={{ fontWeight: 200 }}>{testimonial.role}</div>
+                      <div className="text-gray-400 text-base font-extralight" style={{ fontWeight: 200 }}>{testimonial.company}</div>
                     </div>
                     <div className="text-right">
-                      <div className="text-sm text-purple-300 font-light" style={{ fontWeight: 300 }}>
+                      <div className="text-base text-purple-300 font-light" style={{ fontWeight: 300 }}>
                         {testimonial.highlight}
                       </div>
                     </div>

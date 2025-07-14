@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export function HeroQuantum() {
   return (
-    <section className="relative flex items-center justify-center min-h-screen py-16 md:py-20 perspective-1000">
+    <section className="relative flex items-center justify-center min-h-screen py-10 md:py-14 perspective-1000"
       {/* Clean geometric background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Radial gradient backdrop */}
@@ -30,7 +30,7 @@ export function HeroQuantum() {
       {/* Headline */}
       <div className="absolute z-20 text-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h1
-          className="text-5xl md:text-7xl font-extralight tracking-widest uppercase"
+          className="text-6xl md:text-8xl font-extralight tracking-widest uppercase"
           style={{ fontFamily: 'Inter, sans-serif', fontWeight: 200 }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -41,7 +41,7 @@ export function HeroQuantum() {
           </span>
         </motion.h1>
         <motion.p
-          className="mt-4 text-xl md:text-2xl font-extralight tracking-wide text-[var(--quantum-cyan)]"
+          className="mt-5 text-2xl md:text-3xl font-extralight tracking-wide text-[var(--quantum-cyan)]"
           style={{ fontWeight: 200 }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -50,7 +50,7 @@ export function HeroQuantum() {
           AI Automation Strategist • 15+ Years Fortune 500 Experience
         </motion.p>
         <motion.p
-          className="mt-6 text-lg md:text-xl font-extralight tracking-wide text-gray-200 max-w-3xl mx-auto leading-relaxed"
+          className="mt-7 text-xl md:text-2xl font-extralight tracking-wide text-gray-200 max-w-4xl mx-auto leading-relaxed"
           style={{ fontWeight: 200 }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -66,16 +66,16 @@ export function HeroQuantum() {
         >
           <a
             href="#contact"
-            className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-[var(--color-primary)] to-green-400 px-8 py-4 font-semibold text-black shadow-2xl shadow-green-500/25 transition-all duration-300 hover:scale-105 hover:shadow-green-500/40"
+            className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-[var(--color-primary)] to-green-400 px-10 py-5 font-semibold text-black shadow-2xl shadow-green-500/25 transition-all duration-300 hover:scale-105 hover:shadow-green-500/40"
           >
-            <span className="relative z-10">Schedule Strategy Session</span>
+            <span className="relative z-10 text-xl font-bold uppercase tracking-wide">SCHEDULE STRATEGY SESSION</span>
             <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-[var(--color-primary)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
           </a>
           <a
             href="#contact"
-            className="group relative overflow-hidden rounded-xl border-2 border-[var(--quantum-glow)] px-8 py-4 font-semibold text-[var(--quantum-glow)] shadow-xl shadow-[var(--quantum-glow)]/20 transition-all duration-300 hover:scale-105 hover:shadow-[var(--quantum-glow)]/40"
+            className="group relative overflow-hidden rounded-xl border-2 border-[var(--quantum-glow)] px-10 py-5 font-semibold text-[var(--quantum-glow)] shadow-xl shadow-[var(--quantum-glow)]/20 transition-all duration-300 hover:scale-105 hover:shadow-[var(--quantum-glow)]/40"
           >
-            <span className="relative z-10 transition-colors duration-300 group-hover:text-black">Get ROI Assessment</span>
+            <span className="relative z-10 transition-colors duration-300 group-hover:text-black text-xl font-bold uppercase tracking-wide">GET ROI ASSESSMENT</span>
             <div className="absolute inset-0 bg-[var(--quantum-glow)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
           </a>
         </motion.div>

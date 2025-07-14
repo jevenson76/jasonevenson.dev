@@ -13,7 +13,7 @@ const ResultsStrip = () => {
   ];
 
   return (
-    <section className="relative py-8 md:py-12 overflow-hidden bg-gradient-to-r from-purple-900 via-blue-900 to-purple-900">
+    <section className="relative py-5 md:py-7 overflow-hidden bg-gradient-to-r from-purple-900 via-blue-900 to-purple-900">
       {/* Animated background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-black/20" />
@@ -41,12 +41,12 @@ const ResultsStrip = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-19"
         >
-          <h2 className="text-3xl md:text-4xl font-light text-white mb-4" style={{ fontWeight: 300 }}>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontWeight: 700 }}>
             Proven Results That Speak Volumes
           </h2>
-          <p className="text-lg text-gray-200 max-w-2xl mx-auto font-extralight" style={{ fontWeight: 200 }}>
+          <p className="text-xl text-gray-200 max-w-2xl mx-auto font-extralight" style={{ fontWeight: 200 }}>
             Numbers don't lie. Here's what happens when strategy meets execution.
           </p>
         </motion.div>
@@ -61,7 +61,7 @@ const ResultsStrip = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="text-center"
             >
-              <div className="text-4xl md:text-5xl font-light text-white mb-2" style={{ fontWeight: 300 }}>
+              <div className="text-5xl md:text-6xl font-light text-white mb-2" style={{ fontWeight: 300 }}>
                 <CountUp
                   end={stat.value}
                   duration={2.5}
@@ -73,7 +73,7 @@ const ResultsStrip = () => {
                   suffix={stat.suffix}
                 />
               </div>
-              <p className="text-sm md:text-base text-gray-200 font-extralight" style={{ fontWeight: 200 }}>
+              <p className="text-base md:text-lg text-gray-200 font-extralight" style={{ fontWeight: 200 }}>
                 {stat.label}
               </p>
             </motion.div>
