@@ -119,9 +119,9 @@ export default function ServiceCardsDark() {
           viewport={{ once: true }}
           className="text-center mb-19 md:mb-24"
         >
-          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-full px-6 py-2 mb-6 border border-[var(--quantum-glow)]/30">
-            <div className="w-2 h-2 bg-[var(--quantum-glow)] rounded-full animate-pulse"></div>
-            <span className="text-[var(--quantum-glow)] font-medium">Enterprise Solutions</span>
+          <div className="inline-flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-full px-6 py-2.5 mb-8 border border-[var(--quantum-glow)]/30 backdrop-blur-sm">
+            <div className="w-2.5 h-2.5 bg-[var(--quantum-glow)] rounded-full flex-shrink-0 animate-pulse" />
+            <span className="text-[var(--quantum-glow)] font-medium leading-none">Enterprise Solutions</span>
           </div>
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-7">
             AI-Powered Business Transformation
