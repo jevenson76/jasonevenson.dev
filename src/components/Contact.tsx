@@ -75,7 +75,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-20 bg-black relative overflow-hidden" id="contact">
+    <section className="py-16 md:py-24 bg-black relative overflow-hidden" id="contact">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-purple-900/10 via-transparent to-blue-900/10" />
@@ -99,7 +99,7 @@ const Contact = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-16 md:mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Let's Automate Your Revenue Growth
@@ -109,13 +109,13 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-12">
+        <div className="grid lg:grid-cols-3 gap-12 md:gap-16">
           {/* Contact Information */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="space-y-8"
+            className="space-y-8 md:space-y-10"
           >
             <div>
               <h3 className="text-2xl font-bold text-white mb-4">Get in Touch</h3>

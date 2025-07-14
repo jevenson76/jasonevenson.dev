@@ -13,7 +13,7 @@ const ResultsStrip = () => {
   ];
 
   return (
-    <section className="relative py-20 overflow-hidden bg-gradient-to-r from-purple-900 via-blue-900 to-purple-900">
+    <section className="relative py-16 md:py-24 overflow-hidden bg-gradient-to-r from-purple-900 via-blue-900 to-purple-900">
       {/* Animated background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-black/20" />
@@ -41,7 +41,7 @@ const ResultsStrip = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Proven Results That Speak Volumes
@@ -51,7 +51,7 @@ const ResultsStrip = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {stats.map((stat, index) => (
             <motion.div
               key={index}

@@ -87,7 +87,7 @@ const Testimonials = () => {
   }, [testimonials.length]);
 
   return (
-    <section className="py-20 bg-gray-900 relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-gray-900 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/50" />
@@ -98,7 +98,7 @@ const Testimonials = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-16 md:mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Client Success Stories
@@ -109,7 +109,7 @@ const Testimonials = () => {
         </motion.div>
 
         {/* Featured Testimonial */}
-        <div className="max-w-4xl mx-auto mb-16">
+        <div className="max-w-4xl mx-auto mb-16 md:mb-20"
           <AnimatePresence mode="wait">
             <motion.div
               key={testimonials[activeIndex].id}
@@ -178,7 +178,7 @@ const Testimonials = () => {
         </div>
 
         {/* Testimonial Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={testimonial.id}
@@ -228,7 +228,7 @@ const Testimonials = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-16 bg-gradient-to-r from-purple-900/20 to-blue-900/20 rounded-2xl p-8 text-center"
+          className="mt-16 md:mt-20 bg-gradient-to-r from-purple-900/20 to-blue-900/20 rounded-2xl p-8 text-center"
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div>

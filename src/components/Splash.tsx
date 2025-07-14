@@ -34,15 +34,36 @@ const Splash: React.FC<SplashProps> = ({ onComplete }) => {
         transition={{ duration: 0.5 }}
       >
         <div className="text-center">
-          {/* Clean Logo with JRE initials */}
+          {/* Premium geometric logo matching hero design */}
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.8, type: "spring" }}
             className="mb-8"
           >
-            <div className="w-32 h-32 mx-auto rounded-full border border-[var(--quantum-glow)]/30 flex items-center justify-center">
-              <span className="text-4xl font-thin tracking-widest text-[var(--quantum-glow)]">
+            <div className="relative w-40 h-32 mx-auto flex items-center justify-center">
+              {/* Corner brackets */}
+              <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-[var(--quantum-glow)]/60"></div>
+              <div className="absolute top-0 right-0 w-12 h-12 border-t-2 border-r-2 border-[var(--quantum-glow)]/60"></div>
+              <div className="absolute bottom-0 left-0 w-12 h-12 border-b-2 border-l-2 border-[var(--quantum-glow)]/60"></div>
+              <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-[var(--quantum-glow)]/60"></div>
+              
+              {/* Gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 via-transparent to-blue-500/5"></div>
+              
+              {/* Tech grid pattern */}
+              <div className="absolute inset-2 opacity-20">
+                <div className="w-full h-full" style={{
+                  backgroundImage: `
+                    linear-gradient(var(--quantum-glow) 1px, transparent 1px),
+                    linear-gradient(90deg, var(--quantum-glow) 1px, transparent 1px)
+                  `,
+                  backgroundSize: '20px 20px'
+                }}></div>
+              </div>
+              
+              {/* JRE initials */}
+              <span className="relative z-10 text-4xl font-thin tracking-widest text-[var(--quantum-glow)]">
                 JRE
               </span>
             </div>

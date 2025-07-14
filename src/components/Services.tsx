@@ -28,12 +28,12 @@ const Services = () => {
       period: billingCycle === 'investment' ? 'one-time' : 'monthly',
       description: 'Fast revenue impact for immediate business results',
       features: [
-        '🎯 Single high-impact automation',
-        '⚡ 2-week implementation',
-        '📊 ROI tracking setup',
-        '📚 Complete documentation',
-        '🔧 30-day optimization',
-        '💰 Minimum 3x ROI guarantee'
+        'Single high-impact automation',
+        '2-week implementation',
+        'ROI tracking setup',
+        'Complete documentation',
+        '30-day optimization',
+        'Minimum 3x ROI guarantee'
       ],
       cta: 'Start Now'
     },
@@ -44,14 +44,14 @@ const Services = () => {
       period: billingCycle === 'investment' ? 'one-time' : 'monthly',
       description: 'Complete revenue engine transformation',
       features: [
-        '🚀 Multi-system automation',
-        '🤖 Custom AI integrations',
-        '📈 Sales funnel optimization',
-        '⏰ 6-week full deployment',
-        '🎓 Team training included',
-        '🔄 90-day performance optimization',
-        '🏆 Fortune 500 methodologies',
-        '💎 Dedicated success manager'
+        'Multi-system automation',
+        'Custom AI integrations',
+        'Sales funnel optimization',
+        '6-week full deployment',
+        'Team training included',
+        '90-day performance optimization',
+        'Fortune 500 methodologies',
+        'Dedicated success manager'
       ],
       highlighted: true,
       popular: true,
@@ -64,14 +64,14 @@ const Services = () => {
       period: billingCycle === 'investment' ? 'project-based' : 'monthly',
       description: 'Executive-level AI transformation partnership',
       features: [
-        '🎯 Enterprise-wide strategy',
-        '👔 C-suite consulting',
-        '🏗️ Custom architecture design',
-        '📋 Change management',
-        '🗺️ Multi-phase roadmap',
-        '🎯 Executive team training',
-        '💼 $130M+ project experience',
-        '🤝 Ongoing strategic advisor'
+        'Enterprise-wide strategy',
+        'C-suite consulting',
+        'Custom architecture design',
+        'Change management',
+        'Multi-phase roadmap',
+        'Executive team training',
+        '$130M+ project experience',
+        'Ongoing strategic advisor'
       ],
       cta: 'Book Strategy Call'
     }
@@ -86,7 +86,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="py-20 bg-black relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-black relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-purple-900/10 via-transparent to-blue-900/10" />
@@ -109,7 +109,7 @@ const Services = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-16 md:mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Revenue-First AI Automation
@@ -144,7 +144,7 @@ const Services = () => {
         </motion.div>
 
         {/* Pricing Tiers */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-3 gap-8 md:gap-10 mb-16 md:mb-20"
           {tiers.map((tier, index) => (
             <motion.div
               key={tier.name}
@@ -237,7 +237,7 @@ const Services = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="text-center mt-16"
+          className="text-center mt-16 md:mt-20"
         >
           <p className="text-gray-400 mb-6">
             Not sure which option is right for you?

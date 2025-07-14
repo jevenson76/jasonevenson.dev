@@ -101,13 +101,13 @@ const Deliverables = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-900 relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-gray-900 relative overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="text-center mb-16 md:mb-20"
         >
           <div className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-full px-6 py-2 mb-6 border border-[var(--quantum-glow)]/30">
             <div className="w-2 h-2 bg-[var(--quantum-glow)] rounded-full animate-pulse"></div>
@@ -125,7 +125,7 @@ const Deliverables = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10"
           {deliverables.map((deliverable, index) => (
             <motion.div
               key={index}
@@ -155,7 +155,7 @@ const Deliverables = () => {
                       {deliverable.description}
                     </p>
                     <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-[var(--quantum-glow)]/20 to-purple-500/20 border border-[var(--quantum-glow)]/30 text-[var(--quantum-glow)] font-semibold">
-                      💎 {deliverable.value}
+                      {deliverable.value}
                     </div>
                   </div>
                 </div>
@@ -191,7 +191,7 @@ const Deliverables = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.8 }}
-          className="text-center mt-12"
+          className="text-center mt-16 md:mt-20"
         >
           <p className="text-gray-300 mb-6">
             Ready to see what's possible for your business?

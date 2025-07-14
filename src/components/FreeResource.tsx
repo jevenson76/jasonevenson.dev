@@ -30,14 +30,14 @@ const FreeResource = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-br from-purple-900/40 to-blue-900/40 rounded-2xl p-8 md:p-12 border border-purple-500/20 backdrop-blur-sm"
+          className="bg-gradient-to-br from-purple-900/40 to-blue-900/40 rounded-2xl p-8 md:p-12 lg:p-16 border border-purple-500/20 backdrop-blur-sm"
         >
           <div className="text-center mb-8">
             <motion.div
