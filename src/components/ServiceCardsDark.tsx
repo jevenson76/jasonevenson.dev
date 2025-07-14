@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const services = [
   {
-    title: 'AI-Powered Revenue Systems',
+    title: 'AI Revenue Systems',
     description:
       'Custom AI solutions that directly increase your bottom line through intelligent automation and optimization.',
     benefit: 'Average 40% revenue increase within 6 months',
@@ -19,7 +19,7 @@ const services = [
     ],
   },
   {
-    title: 'Enterprise Automation Infrastructure',
+    title: 'Automation Infrastructure',
     description:
       'Mission-critical automation that eliminates operational bottlenecks and scales with your growth.',
     benefit: 'Reduce operational costs by 65% while doubling capacity',
@@ -33,7 +33,7 @@ const services = [
     ],
   },
   {
-    title: 'Data-Driven Growth Engine',
+    title: 'Growth Engine',
     description:
       'Advanced analytics and intelligence systems that reveal hidden profit opportunities in your business.',
     benefit: 'Identify $2M+ in untapped revenue opportunities',
@@ -47,7 +47,7 @@ const services = [
     ],
   },
   {
-    title: 'Enterprise-Grade Integration',
+    title: 'Enterprise Integration',
     description:
       'Seamless technology integration that connects your entire business ecosystem for maximum efficiency.',
     benefit: 'Fortune 500-level infrastructure at startup speed',
@@ -75,7 +75,7 @@ const services = [
     ],
   },
   {
-    title: 'AI Transformation Strategy',
+    title: 'AI Strategy',
     description:
       'Executive-level strategic guidance to position your company as an AI-first market leader.',
     benefit: 'Become the dominant AI-enabled player in your market',
@@ -135,7 +135,7 @@ export default function ServiceCardsDark() {
               
               {/* Content */}
               <div className="relative z-10">
-                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[var(--quantum-glow)] transition-colors">
+                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[var(--quantum-glow)] transition-colors leading-tight">
                   {service.title}
                 </h3>
                 
