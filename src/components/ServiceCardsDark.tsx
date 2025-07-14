@@ -95,8 +95,8 @@ export default function ServiceCardsDark() {
     <section className="py-16 md:py-24 bg-black relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-purple-900/10 via-transparent to-blue-900/10" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--quantum-glow)_0%,_transparent_50%)] opacity-5" />
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/20 via-transparent to-gray-800/20" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(139,92,246,0.05)_0%,_transparent_60%)]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -135,7 +135,7 @@ export default function ServiceCardsDark() {
               
               {/* Content */}
               <div className="relative z-10">
-                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[var(--quantum-glow)] transition-colors leading-tight">
+                <h3 className="text-2xl font-bold text-[#54ab00] mb-4 group-hover:text-[#54ab00] transition-colors leading-tight text-center">
                   {service.title}
                 </h3>
                 
