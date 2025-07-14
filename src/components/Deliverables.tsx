@@ -16,87 +16,87 @@ const Deliverables = () => {
   const deliverables: Deliverable[] = [
     {
       icon: <FaRobot />,
-      title: 'AI Development & Integration',
-      description: 'Enterprise-grade AI solutions using cutting-edge APIs and frameworks',
+      title: 'AI-Powered Revenue Systems',
+      description: 'Custom AI solutions that directly increase your bottom line through intelligent automation and optimization',
       examples: [
-        'ChatGPT & Claude API Implementation',
-        'LangChain AI Agent Development',
-        'Machine Learning Model Integration',
-        'OpenAI API Custom Solutions',
-        'Prompt Engineering & Optimization',
-        'AI Strategy & Digital Transformation'
+        'AI sales agents that qualify leads 24/7',
+        'Predictive analytics for demand forecasting',
+        'Dynamic pricing optimization algorithms',
+        'Automated customer lifecycle management',
+        'Intelligent content generation at scale',
+        'Real-time competitive intelligence'
       ],
-      value: 'Expert-level implementation'
+      value: 'Average 40% revenue increase within 6 months'
     },
     {
       icon: <FaCogs />,
-      title: 'Business Process Automation',
-      description: 'Complete workflow automation using enterprise platforms',
+      title: 'Enterprise Automation Infrastructure',
+      description: 'Mission-critical automation that eliminates operational bottlenecks and scales with your growth',
       examples: [
-        'Make.com & Zapier Integration',
-        'N8N Workflow Development',
-        'Microsoft Power Automate',
-        'CRM Integration (Salesforce)',
-        'Webhook & API Integration',
-        'Process Mining & Optimization'
+        'End-to-end sales pipeline automation',
+        'Intelligent document processing & routing',
+        'Cross-platform data synchronization',
+        'Automated compliance & reporting systems',
+        'Smart inventory & supply chain management',
+        'Real-time performance monitoring dashboards'
       ],
-      value: 'Reduce manual work by 60%+'
+      value: 'Reduce operational costs by 65% while doubling capacity'
     },
     {
       icon: <FaChartLine />,
-      title: 'Revenue Optimization Systems',
-      description: 'Data-driven solutions for sales and conversion improvement',
+      title: 'Data-Driven Growth Engine',
+      description: 'Advanced analytics and intelligence systems that reveal hidden profit opportunities in your business',
       examples: [
-        'Sales Funnel Development',
-        'ROI Analysis & Reporting',
-        'Conversion Optimization',
-        'Business Intelligence Dashboards',
-        'Revenue Automation',
-        'B2B Sales Process Enhancement'
+        'Customer lifetime value prediction models',
+        'Churn prevention & retention automation',
+        'Market opportunity identification systems',
+        'Revenue attribution & optimization',
+        'Predictive inventory management',
+        'Executive KPI dashboards with AI insights'
       ],
-      value: 'Measurable revenue impact'
+      value: 'Identify $2M+ in untapped revenue opportunities'
     },
     {
       icon: <FaBuilding />,
-      title: 'Enterprise Integration',
-      description: 'Corporate-level technical solutions and consulting',
+      title: 'Enterprise-Grade Integration',
+      description: 'Seamless technology integration that connects your entire business ecosystem for maximum efficiency',
       examples: [
-        'Enterprise Software Integration',
-        'Technical Documentation',
-        'Agile Project Management',
-        'Data Analytics & Reporting',
-        'YouTube API & Social Media',
-        'Business Consulting & Strategy'
+        'CRM-ERP unified data architecture',
+        'Legacy system modernization',
+        'Multi-cloud infrastructure optimization',
+        'Real-time business intelligence platforms',
+        'Secure API ecosystem development',
+        'Enterprise-grade security implementation'
       ],
-      value: 'Fortune 500 experience'
+      value: 'Fortune 500-level infrastructure at startup speed'
+    },
+    {
+      icon: <FaCogs />,
+      title: 'Custom AI Solutions',
+      description: 'Bespoke AI applications designed specifically for your industry and competitive landscape',
+      examples: [
+        'Industry-specific AI models & algorithms',
+        'Proprietary data processing pipelines',
+        'Custom machine learning applications',
+        'AI-powered mobile & web platforms',
+        'Blockchain integration for transparency',
+        'Scalable cloud-native architecture'
+      ],
+      value: 'Proprietary AI advantage over competitors'
     },
     {
       icon: <FaUsers />,
-      title: 'Custom Development',
-      description: 'Tailored solutions built with modern technologies',
+      title: 'AI Transformation Strategy',
+      description: 'Executive-level strategic guidance to position your company as an AI-first market leader',
       examples: [
-        'Python Development',
-        'API Integration & Development',
-        'Database Design & Management',
-        'Cloud Solutions (DevOps)',
-        'Mobile & Web Applications',
-        'Blockchain & NFT Development'
+        'AI readiness assessment & roadmap',
+        'Competitive advantage identification',
+        'Technology stack modernization plan',
+        'Team training & change management',
+        'ROI measurement & optimization',
+        'Innovation pipeline development'
       ],
-      value: 'Complete technical solutions'
-    },
-    {
-      icon: <FaFileAlt />,
-      title: 'Strategic Consulting',
-      description: 'Executive-level guidance for AI transformation initiatives',
-      examples: [
-        'Digital Transformation Planning',
-        'AI Implementation Roadmaps',
-        'Executive Training & Workshops',
-        'Change Management Support',
-        'Technology Stack Assessment',
-        'ROI Projection & Analysis'
-      ],
-      value: 'C-suite strategic partnership'
+      value: 'Become the dominant AI-enabled player in your market'
     }
   ];
 
