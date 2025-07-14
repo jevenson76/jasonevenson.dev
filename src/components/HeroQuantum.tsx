@@ -30,18 +30,19 @@ export function HeroQuantum() {
       {/* Headline */}
       <div className="absolute z-20 text-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h1
-          className="text-5xl md:text-7xl font-thin tracking-widest uppercase"
-          style={{ fontFamily: 'Inter, sans-serif' }}
+          className="text-5xl md:text-7xl font-extralight tracking-widest uppercase"
+          style={{ fontFamily: 'Inter, sans-serif', fontWeight: 200 }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <span className="bg-gradient-to-r from-[#f0f9ff] via-[var(--quantum-glow)] to-[var(--quantum-cyan)] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#ffffff] via-[var(--quantum-glow)] to-[var(--quantum-cyan)] bg-clip-text text-transparent">
             Jason Evenson
           </span>
         </motion.h1>
         <motion.p
-          className="mt-4 text-xl md:text-2xl font-light tracking-wide text-[var(--quantum-cyan)]"
+          className="mt-4 text-xl md:text-2xl font-extralight tracking-wide text-[var(--quantum-cyan)]"
+          style={{ fontWeight: 200 }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
@@ -49,7 +50,8 @@ export function HeroQuantum() {
           AI Automation Strategist • 15+ Years Fortune 500 Experience
         </motion.p>
         <motion.p
-          className="mt-6 text-lg md:text-xl font-light tracking-wide text-gray-300 max-w-3xl mx-auto leading-relaxed"
+          className="mt-6 text-lg md:text-xl font-extralight tracking-wide text-gray-200 max-w-3xl mx-auto leading-relaxed"
+          style={{ fontWeight: 200 }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}

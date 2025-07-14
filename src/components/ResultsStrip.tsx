@@ -43,10 +43,10 @@ const ResultsStrip = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-light text-white mb-4" style={{ fontWeight: 300 }}>
             Proven Results That Speak Volumes
           </h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-200 max-w-2xl mx-auto font-extralight" style={{ fontWeight: 200 }}>
             Numbers don't lie. Here's what happens when strategy meets execution.
           </p>
         </motion.div>
@@ -61,7 +61,7 @@ const ResultsStrip = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="text-center"
             >
-              <div className="text-4xl md:text-5xl font-bold text-white mb-2">
+              <div className="text-4xl md:text-5xl font-light text-white mb-2" style={{ fontWeight: 300 }}>
                 <CountUp
                   end={stat.value}
                   duration={2.5}
@@ -73,7 +73,7 @@ const ResultsStrip = () => {
                   suffix={stat.suffix}
                 />
               </div>
-              <p className="text-sm md:text-base text-gray-300">
+              <p className="text-sm md:text-base text-gray-200 font-extralight" style={{ fontWeight: 200 }}>
                 {stat.label}
               </p>
             </motion.div>

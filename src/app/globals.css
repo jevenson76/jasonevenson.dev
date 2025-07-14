@@ -13,12 +13,12 @@
   --color-lav:     #b8a9ff;
   --color-gold:    #d4a017;
 
-  /* Quantum interface palette from HTML */
+  /* Quantum interface palette from HTML - Brighter */
   --quantum-deep:  #0a0e27;
   --quantum-dark:  #1a1f4a;
-  --quantum-glow:  #818cf8;
-  --quantum-cyan:  #06b6d4;
-  --quantum-purple:#6b46c1;
+  --quantum-glow:  #a5b4fc;
+  --quantum-cyan:  #22d3ee;
+  --quantum-purple:#8b5cf6;
 }
 
 html,body {

@@ -4,7 +4,6 @@ import './globals.css';
 // import { ParticleField } from '@/components/ParticleField';
 import { Footer } from '@/components/Footer';
 import { SplashWrapper } from '@/components/SplashWrapper';
-import { OceanLines } from '@/components/OceanLines';
 import { SquarePattern } from '@/components/SquarePattern';
 
 export const metadata: Metadata = {
@@ -26,7 +25,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <SplashWrapper />
         <SquarePattern />
-        <OceanLines />
         {/* <ParticleField /> */}
         <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {children}

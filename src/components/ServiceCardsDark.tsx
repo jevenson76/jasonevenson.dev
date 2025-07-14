@@ -123,11 +123,11 @@ export default function ServiceCardsDark() {
             <div className="w-2 h-2 bg-[var(--quantum-glow)] rounded-full animate-pulse"></div>
             <span className="text-[var(--quantum-glow)] font-medium">Enterprise Solutions</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-light text-white mb-6" style={{ fontWeight: 300 }}>
             AI-Powered Business Transformation
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Stop paying for consultants who deliver PowerPoints. Get <strong className="text-white">working systems</strong> that generate revenue from day one.
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto font-extralight" style={{ fontWeight: 200 }}>
+            Stop paying for consultants who deliver PowerPoints. Get <strong className="text-white font-normal">working systems</strong> that generate revenue from day one.
           </p>
         </motion.div>
 
@@ -140,45 +140,45 @@ export default function ServiceCardsDark() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
-              className="group relative bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-[var(--quantum-glow)]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.3)]"
+              className="group relative bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-[var(--quantum-glow)]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.3)] flex flex-col h-full"
             >
               {/* Quantum glow effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-[var(--quantum-glow)]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               
               {/* Content */}
-              <div className="relative z-10">
-                <h3 className="text-2xl font-bold text-[#38d266] mb-6 group-hover:text-[#38d266] transition-colors leading-tight text-center">
+              <div className="relative z-10 flex flex-col h-full">
+                <h3 className="text-2xl font-light text-[#38d266] mb-6 group-hover:text-[#38d266] transition-colors leading-tight text-center" style={{ fontWeight: 300 }}>
                   {service.title}
                 </h3>
                 
-                <p className="text-gray-300 mb-6 leading-relaxed">
+                <p className="text-gray-200 mb-6 leading-relaxed font-extralight" style={{ fontWeight: 200 }}>
                   {service.description}
                 </p>
                 
-                <div className="bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-lg p-4 mb-6 border border-[var(--quantum-glow)]/30">
-                  <p className="text-[var(--quantum-glow)] font-semibold text-center">
+                <div className="bg-gradient-to-r from-purple-400/20 to-blue-400/20 rounded-lg p-4 mb-6 border border-[var(--quantum-glow)]/30">
+                  <p className="text-[var(--quantum-glow)] font-light text-center" style={{ fontWeight: 300 }}>
                     {service.benefit}
                   </p>
                 </div>
                 
-                <ul className="space-y-3 mb-6">
+                <ul className="space-y-3 mb-6 flex-grow">
                   {service.features.map((feature, featureIdx) => (
                     <li key={featureIdx} className="flex items-start gap-3">
                       <div className="w-1.5 h-1.5 bg-[var(--quantum-glow)] rounded-full mt-2 flex-shrink-0" />
-                      <span className="text-gray-300 text-sm leading-relaxed">{feature}</span>
+                      <span className="text-gray-200 text-sm leading-relaxed font-extralight" style={{ fontWeight: 200 }}>{feature}</span>
                     </li>
                   ))}
                 </ul>
                 
                 {/* Investment & Timeline */}
-                <div className="flex justify-between items-center pt-6 border-t border-gray-800">
+                <div className="flex justify-between items-center pt-6 border-t border-gray-800 mt-auto">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-white">{service.investment}</div>
-                    <div className="text-sm text-gray-400">Investment</div>
+                    <div className="text-2xl font-light text-white" style={{ fontWeight: 300 }}>{service.investment}</div>
+                    <div className="text-sm text-gray-400 font-extralight" style={{ fontWeight: 200 }}>Investment</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-[var(--quantum-glow)]">{service.timeline}</div>
-                    <div className="text-sm text-gray-400">Timeline</div>
+                    <div className="text-2xl font-light text-[var(--quantum-glow)]" style={{ fontWeight: 300 }}>{service.timeline}</div>
+                    <div className="text-sm text-gray-400 font-extralight" style={{ fontWeight: 200 }}>Timeline</div>
                   </div>
                 </div>
               </div>
