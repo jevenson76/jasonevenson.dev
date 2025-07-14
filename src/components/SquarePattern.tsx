@@ -100,6 +100,9 @@ export function SquarePattern() {
           </radialGradient>
         </defs>
         
+        {/* Animated individual squares */}
+        {squares}
+        
         {/* Base square pattern */}
         <rect width="100%" height="100%" fill="url(#squarePattern)" />
         
