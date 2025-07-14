@@ -157,7 +157,7 @@ export default function ServiceCardsDark() {
                     {service.description}
                   </p>
                   
-                  <div className="bg-gradient-to-r from-cyan-300/40 to-cyan-400/30 rounded-lg p-5 mb-7 border border-cyan-300/70">
+                  <div className="bg-gradient-to-r from-cyan-400/30 to-cyan-500/20 rounded-lg p-5 mb-7 border border-cyan-400/50">
                     <p className="text-lg text-cyan-100 font-light text-center" style={{ fontWeight: 300 }}>
                       {service.benefit}
                     </p>
