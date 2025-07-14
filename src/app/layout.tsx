@@ -1,9 +1,16 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
+import { Inter } from 'next/font/google';
 // import { ParticleField } from '@/components/ParticleField';
 import { Footer } from '@/components/Footer';
 import { SplashWrapper } from '@/components/SplashWrapper';
 import { SquarePattern } from '@/components/SquarePattern';
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  preload: true,
+});
 
 export const metadata: Metadata = {
   title: 'Jason Evenson – AI Automation & Revenue Growth',
@@ -25,7 +32,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="font-sans">
+    <html lang="en" className={`${inter.className} font-sans`}>
       <body>
         <SplashWrapper />
         <SquarePattern />
