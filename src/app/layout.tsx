@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
 };
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'] }); // Force deployment update
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
