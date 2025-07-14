@@ -19,7 +19,7 @@ const services = [
     ],
   },
   {
-    title: 'Automation Infrastructure',
+    title: 'Process Automation',
     description:
       'Mission-critical automation that eliminates operational bottlenecks and scales with your growth.',
     benefit: 'Reduce operational costs by 65% while doubling capacity',
@@ -135,7 +135,7 @@ export default function ServiceCardsDark() {
               
               {/* Content */}
               <div className="relative z-10">
-                <h3 className="text-2xl font-bold text-[#54ab00] mb-4 group-hover:text-[#54ab00] transition-colors leading-tight text-center">
+                <h3 className="text-2xl font-bold text-[#38d266] mb-6 group-hover:text-[#38d266] transition-colors leading-tight text-center">
                   {service.title}
                 </h3>
                 

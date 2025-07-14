@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { ParticleField } from '@/components/ParticleField';
+// import { ParticleField } from '@/components/ParticleField';
 import { Footer } from '@/components/Footer';
 import { SplashWrapper } from '@/components/SplashWrapper';
 
@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={inter.className}>
       <body>
         <SplashWrapper />
-        <ParticleField />
+        {/* <ParticleField /> */}
         <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {children}
         </main>
