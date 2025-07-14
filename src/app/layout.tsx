@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
 // import { ParticleField } from '@/components/ParticleField';
 import { Footer } from '@/components/Footer';
@@ -17,15 +16,9 @@ export const metadata: Metadata = {
   },
 };
 
-const inter = Inter({ 
-  subsets: ['latin'],
-  display: 'swap',
-  preload: true
-});
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" className="font-sans">
       <body>
         <SplashWrapper />
         <SquarePattern />
