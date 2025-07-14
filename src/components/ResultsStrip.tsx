@@ -43,10 +43,10 @@ const ResultsStrip = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-19"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-5">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-5 max-w-3xl mx-auto leading-tight">
             Proven Results That Speak Volumes
           </h2>
-          <p className="text-xl text-gray-200 max-w-2xl mx-auto font-extralight">
+          <p className="text-lg md:text-xl text-gray-100 max-w-2xl mx-auto font-extralight leading-normal">
             Numbers don't lie. Here's what happens when strategy meets execution.
           </p>
         </motion.div>

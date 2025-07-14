@@ -123,10 +123,10 @@ export default function ServiceCardsDark() {
             <div className="w-2.5 h-2.5 bg-[var(--quantum-glow)] rounded-full flex-shrink-0 animate-pulse" />
             <span className="text-[var(--quantum-glow)] font-medium leading-none">Enterprise Solutions</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-7">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-7 max-w-4xl mx-auto leading-tight">
             AI-Powered Business Transformation
           </h2>
-          <p className="text-2xl text-gray-200 max-w-4xl mx-auto font-extralight">
+          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto font-extralight leading-relaxed">
             Stop paying for consultants who deliver PowerPoints. Get <strong className="text-white font-normal">working systems</strong> that generate revenue from day one.
           </p>
         </motion.div>
@@ -149,11 +149,11 @@ export default function ServiceCardsDark() {
               <div className="relative z-10 flex flex-col h-full">
                 {/* Top section - Title, Description, Benefit */}
                 <div className="flex-grow">
-                  <h3 className="text-3xl font-bold text-[var(--quantum-glow)] mb-7 group-hover:text-[var(--quantum-glow)] transition-colors leading-tight">
+                  <h3 className="text-3xl font-bold text-[var(--quantum-glow)] mb-7 group-hover:text-[var(--quantum-glow)] transition-colors leading-tight text-left">
                     {service.title}
                   </h3>
                   
-                  <p className="text-xl text-gray-200 mb-7 leading-relaxed font-extralight">
+                  <p className="text-xl text-gray-300 mb-7 leading-relaxed font-extralight">
                     {service.description}
                   </p>
                   
@@ -167,7 +167,7 @@ export default function ServiceCardsDark() {
                     {service.features.map((feature, featureIdx) => (
                       <li key={featureIdx} className="flex items-start gap-3">
                         <div className="w-1.5 h-1.5 bg-[var(--quantum-glow)] rounded-full mt-2 flex-shrink-0" />
-                        <span className="text-gray-200 text-base leading-relaxed font-extralight">{feature}</span>
+                        <span className="text-gray-300 text-base leading-relaxed font-extralight">{feature}</span>
                       </li>
                     ))}
                   </ul>
