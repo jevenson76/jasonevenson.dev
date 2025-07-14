@@ -132,7 +132,7 @@ export default function ServiceCardsDark() {
         </motion.div>
 
         {/* Service Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12 items-stretch">
           {services.map((service, idx) => (
             <motion.div
               key={idx}
@@ -140,37 +140,40 @@ export default function ServiceCardsDark() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
-              className="group relative bg-gray-900 rounded-2xl p-10 border border-gray-800 hover:border-[var(--quantum-glow)]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.3)] flex flex-col h-full"
+              className="group relative bg-gray-900 rounded-2xl p-10 border border-gray-800 hover:border-[var(--quantum-glow)]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.3)] flex flex-col justify-between h-full"
             >
               {/* Quantum glow effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-[var(--quantum-glow)]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               
               {/* Content */}
               <div className="relative z-10 flex flex-col h-full">
-                <h3 className="text-3xl font-bold text-[#38d266] mb-7 group-hover:text-[#38d266] transition-colors leading-tight text-center" style={{ fontWeight: 700 }}>
-                  {service.title}
-                </h3>
-                
-                <p className="text-xl text-gray-200 mb-7 leading-relaxed font-extralight" style={{ fontWeight: 200 }}>
-                  {service.description}
-                </p>
-                
-                <div className="bg-gradient-to-r from-cyan-300/40 to-cyan-400/30 rounded-lg p-5 mb-7 border border-cyan-300/70">
-                  <p className="text-lg text-cyan-100 font-light text-center" style={{ fontWeight: 300 }}>
-                    {service.benefit}
+                {/* Top section - Title, Description, Benefit */}
+                <div className="flex-grow">
+                  <h3 className="text-3xl font-bold text-[#38d266] mb-7 group-hover:text-[#38d266] transition-colors leading-tight text-center" style={{ fontWeight: 700 }}>
+                    {service.title}
+                  </h3>
+                  
+                  <p className="text-xl text-gray-200 mb-7 leading-relaxed font-extralight" style={{ fontWeight: 200 }}>
+                    {service.description}
                   </p>
+                  
+                  <div className="bg-gradient-to-r from-cyan-300/40 to-cyan-400/30 rounded-lg p-5 mb-7 border border-cyan-300/70">
+                    <p className="text-lg text-cyan-100 font-light text-center" style={{ fontWeight: 300 }}>
+                      {service.benefit}
+                    </p>
+                  </div>
+                  
+                  <ul className="space-y-4 mb-7">
+                    {service.features.map((feature, featureIdx) => (
+                      <li key={featureIdx} className="flex items-start gap-3">
+                        <div className="w-1.5 h-1.5 bg-[var(--quantum-glow)] rounded-full mt-2 flex-shrink-0" />
+                        <span className="text-gray-200 text-base leading-relaxed font-extralight" style={{ fontWeight: 200 }}>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
                 
-                <ul className="space-y-4 mb-7 flex-grow">
-                  {service.features.map((feature, featureIdx) => (
-                    <li key={featureIdx} className="flex items-start gap-3">
-                      <div className="w-1.5 h-1.5 bg-[var(--quantum-glow)] rounded-full mt-2 flex-shrink-0" />
-                      <span className="text-gray-200 text-base leading-relaxed font-extralight" style={{ fontWeight: 200 }}>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                
-                {/* Investment & Timeline */}
+                {/* Bottom section - Investment & Timeline */}
                 <div className="flex justify-between items-center pt-7 border-t border-gray-800 mt-auto">
                   <div className="text-center">
                     <div className="text-3xl font-light text-white" style={{ fontWeight: 300 }}>{service.investment}</div>

@@ -142,7 +142,7 @@ const ContentCreationServices = () => {
         </motion.div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12 items-stretch">
           {services.map((service, index) => (
             <motion.div
               key={index}
@@ -150,7 +150,7 @@ const ContentCreationServices = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group relative bg-black rounded-2xl p-10 border border-gray-800 hover:border-cyan-400/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(6,182,212,0.3)] flex flex-col h-full"
+              className="group relative bg-black rounded-2xl p-10 border border-gray-800 hover:border-cyan-400/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(6,182,212,0.3)] flex flex-col justify-between h-full"
             >
               {/* Icon */}
               <div className="flex justify-center mb-7">
@@ -162,7 +162,8 @@ const ContentCreationServices = () => {
               </div>
 
               {/* Title */}
-              <div className="flex flex-col h-full">
+              {/* Top section - Icon, Title, Description, Outcome */}
+              <div className="flex-grow">
                 <h3 className="text-3xl font-bold text-transparent bg-gradient-to-r from-cyan-400 to-gray-300 bg-clip-text mb-5 transition-colors leading-tight text-center" style={{ fontWeight: 700 }}>
                   {service.title}
                 </h3>
@@ -180,7 +181,7 @@ const ContentCreationServices = () => {
                 </div>
 
                 {/* Deliverables */}
-                <div className="mb-7 flex-grow">
+                <div className="mb-7">
                   <ul className="space-y-3">
                     {service.deliverables.map((item, idx) => (
                       <li key={idx} className="flex items-start gap-3">
@@ -190,17 +191,17 @@ const ContentCreationServices = () => {
                     ))}
                   </ul>
                 </div>
+              </div>
 
-                {/* Investment & Timeline */}
-                <div className="flex justify-between items-center pt-5 border-t border-gray-800 mt-auto">
-                  <div className="text-center">
-                    <div className="text-3xl font-light text-white" style={{ fontWeight: 300 }}>{service.investment}</div>
-                    <div className="text-base text-gray-400 font-extralight" style={{ fontWeight: 200 }}>Investment</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-light text-transparent bg-gradient-to-r from-cyan-400 to-gray-300 bg-clip-text" style={{ fontWeight: 300 }}>{service.timeline}</div>
-                    <div className="text-base text-gray-400 font-extralight" style={{ fontWeight: 200 }}>Timeline</div>
-                  </div>
+              {/* Bottom section - Investment & Timeline */}
+              <div className="flex justify-between items-center pt-5 border-t border-gray-800 mt-auto">
+                <div className="text-center">
+                  <div className="text-3xl font-light text-white" style={{ fontWeight: 300 }}>{service.investment}</div>
+                  <div className="text-base text-gray-400 font-extralight" style={{ fontWeight: 200 }}>Investment</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-light text-transparent bg-gradient-to-r from-cyan-400 to-gray-300 bg-clip-text" style={{ fontWeight: 300 }}>{service.timeline}</div>
+                  <div className="text-base text-gray-400 font-extralight" style={{ fontWeight: 200 }}>Timeline</div>
                 </div>
               </div>
 
