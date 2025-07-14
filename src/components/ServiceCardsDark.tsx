@@ -140,7 +140,7 @@ export default function ServiceCardsDark() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
-              className="group relative bg-gray-900 rounded-2xl p-10 border border-gray-800 hover:border-[var(--quantum-glow)]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.3)] flex flex-col justify-between h-full"
+              className="group relative bg-gray-900 rounded-2xl p-10 md:p-12 border border-gray-800 hover:border-[var(--quantum-glow)]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.3)] flex flex-col justify-between h-full"
             >
               {/* Quantum glow effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-[var(--quantum-glow)]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -149,7 +149,7 @@ export default function ServiceCardsDark() {
               <div className="relative z-10 flex flex-col h-full">
                 {/* Top section - Title, Description, Benefit */}
                 <div className="flex-grow">
-                  <h3 className="text-3xl font-bold text-[var(--color-primary)] mb-7 group-hover:text-[var(--color-primary)] transition-colors leading-tight text-center">
+                  <h3 className="text-3xl font-bold text-[var(--quantum-glow)] mb-7 group-hover:text-[var(--quantum-glow)] transition-colors leading-tight">
                     {service.title}
                   </h3>
                   
@@ -157,8 +157,8 @@ export default function ServiceCardsDark() {
                     {service.description}
                   </p>
                   
-                  <div className="bg-gradient-to-r from-cyan-400/30 to-cyan-500/20 rounded-lg p-5 mb-7 border border-cyan-400/50">
-                    <p className="text-lg text-cyan-100 font-light text-center">
+                  <div className="bg-gradient-to-r from-cyan-400/30 to-cyan-500/20 rounded-lg p-5 mb-7 border border-cyan-400/50 min-h-[96px] flex items-center">
+                    <p className="text-lg text-cyan-100 font-light">
                       {service.benefit}
                     </p>
                   </div>
