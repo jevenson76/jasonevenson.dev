@@ -144,7 +144,7 @@ const Services = () => {
         </motion.div>
 
         {/* Pricing Tiers */}
-        <div className="grid md:grid-cols-3 gap-8 md:gap-10 mb-16 md:mb-20"
+        <div className="grid md:grid-cols-3 gap-8 md:gap-10 mb-16 md:mb-20">
           {tiers.map((tier, index) => (
             <motion.div
               key={tier.name}
@@ -256,4 +256,4 @@ const Services = () => {
   );
 };
 
-export { Services };
+export default Services;

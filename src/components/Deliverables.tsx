@@ -125,7 +125,7 @@ const Deliverables = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10"
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {deliverables.map((deliverable, index) => (
             <motion.div
               key={index}
@@ -209,4 +209,4 @@ const Deliverables = () => {
   );
 };
 
-export { Deliverables };
+export default Deliverables;

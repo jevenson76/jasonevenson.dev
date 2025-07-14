@@ -178,7 +178,7 @@ const Testimonials = () => {
         </div>
 
         {/* Testimonial Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={testimonial.id}
@@ -254,4 +254,4 @@ const Testimonials = () => {
   );
 };
 
-export { Testimonials };
+export default Testimonials;
