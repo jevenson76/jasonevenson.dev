@@ -1,7 +1,9 @@
 'use client';
 
 // components/ServiceCardsDark.tsx - Dark theme version matching quantum aesthetic
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { FaTimes } from 'react-icons/fa';
 
 const services = [
   {
@@ -103,8 +105,11 @@ const services = [
 ];
 
 export default function ServiceCardsDark() {
+  const [selectedService, setSelectedService] = useState<typeof services[0] | null>(null);
+
   return (
-    <section className="py-19 md:py-29 bg-black relative overflow-hidden">
+    <>
+      <section id="services" className="py-19 md:py-29 bg-black relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-gray-900/20 via-transparent to-gray-800/20" />
@@ -140,7 +145,8 @@ export default function ServiceCardsDark() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
-              className="group relative bg-gray-900 rounded-2xl p-10 md:p-12 border border-gray-800 hover:border-[var(--quantum-glow)]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.3)] flex flex-col justify-between h-full"
+              onClick={() => setSelectedService(service)}
+              className="cursor-pointer group relative bg-gray-900 rounded-2xl p-10 md:p-12 border border-gray-800 hover:border-[var(--quantum-glow)]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.3)] flex flex-col justify-between h-full"
             >
               {/* Quantum glow effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-[var(--quantum-glow)]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -212,5 +218,52 @@ export default function ServiceCardsDark() {
         </motion.div>
       </div>
     </section>
+
+    {/* Modal */}
+    {selectedService && (
+      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4">
+        <div className="relative bg-gray-900 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto p-10 border border-[var(--quantum-glow)]/30 shadow-lg">
+          <button
+            aria-label="Close details"
+            onClick={() => setSelectedService(null)}
+            className="absolute top-4 right-4 text-gray-400 hover:text-white"
+          >
+            <FaTimes size={24} />
+          </button>
+
+          <h3 className="text-3xl md:text-4xl font-bold text-[var(--quantum-glow)] mb-6">
+            {selectedService.title}
+          </h3>
+
+          <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+            {selectedService.description}
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8 items-start">
+            <img
+              src={`https://source.unsplash.com/600x400/?technology,${encodeURIComponent(selectedService.title)}`}
+              alt={`${selectedService.title} illustration`}
+              className="rounded-lg border border-gray-800"
+            />
+
+            <div>
+              <h4 className="text-xl font-semibold text-white mb-4">Key Features &amp; Deliverables</h4>
+              <ul className="list-disc pl-5 space-y-2 text-gray-300 mb-6">
+                {selectedService.features.map((f, i) => (
+                  <li key={i}>{f}</li>
+                ))}
+              </ul>
+
+              <h4 className="text-xl font-semibold text-white mb-2">ROI Snapshot</h4>
+              <p className="text-[var(--quantum-glow)] font-light text-lg">
+                {selectedService.benefit}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    )}
+
+    </>
   );
 }

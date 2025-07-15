@@ -1,8 +1,8 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaVideo, FaPencilAlt, FaRobot, FaChartLine, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaVideo, FaPencilAlt, FaRobot, FaChartLine, FaInstagram, FaYoutube, FaTimes } from 'react-icons/fa';
 
 interface ContentService {
   icon: React.ReactElement;
@@ -114,8 +114,11 @@ const ContentCreationServices = () => {
     }
   ];
 
+  const [selectedService, setSelectedService] = useState<ContentService | null>(null);
+
   return (
-    <section className="py-19 md:py-29 bg-gray-900 relative overflow-hidden">
+    <>
+    <section id="portfolio" className="py-19 md:py-29 bg-gray-900 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/20" />
@@ -150,7 +153,8 @@ const ContentCreationServices = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group relative bg-black rounded-2xl p-10 border border-gray-800 hover:border-cyan-400/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(6,182,212,0.3)] flex flex-col justify-between h-full"
+              onClick={() => setSelectedService(service)}
+              className="cursor-pointer group relative bg-black rounded-2xl p-10 border border-gray-800 hover:border-cyan-400/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(6,182,212,0.3)] flex flex-col justify-between h-full"
             >
               {/* Icon */}
               <div className="flex justify-center mb-7">
@@ -231,6 +235,66 @@ const ContentCreationServices = () => {
         </motion.div>
       </div>
     </section>
+
+    {/* Modal */}
+    {selectedService && (
+      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4">
+        <div className="relative bg-gray-900 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto p-10 border border-cyan-400/30 shadow-lg">
+          <button
+            aria-label="Close details"
+            onClick={() => setSelectedService(null)}
+            className="absolute top-4 right-4 text-gray-400 hover:text-white"
+          >
+            <FaTimes size={24} />
+          </button>
+
+          <h3 className="text-3xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-cyan-400 to-gray-300 bg-clip-text mb-6">
+            {selectedService.title}
+          </h3>
+
+          <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+            {selectedService.description}
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8 items-start">
+            <img
+              src={`https://source.unsplash.com/600x400/?content,${encodeURIComponent(selectedService.title)}`}
+              alt={`${selectedService.title} illustration`}
+              className="rounded-lg border border-gray-800"
+            />
+
+            <div>
+              <h4 className="text-xl font-semibold text-white mb-4">Deliverables</h4>
+              <ul className="list-disc pl-5 space-y-2 text-gray-300 mb-6">
+                {selectedService.deliverables.map((d, i) => (
+                  <li key={i}>{d}</li>
+                ))}
+              </ul>
+
+              <h4 className="text-xl font-semibold text-white mb-2">Outcome</h4>
+              <p className="text-cyan-300 font-light text-lg mb-4">
+                {selectedService.outcome}
+              </p>
+
+              <div className="flex gap-8">
+                <div>
+                  <div className="text-2xl font-bold text-white">{selectedService.investment}</div>
+                  <div className="text-gray-400 text-sm">Investment</div>
+                </div>
+                <div>
+                  <div className="text-2xl font-bold text-transparent bg-gradient-to-r from-cyan-400 to-gray-300 bg-clip-text">
+                    {selectedService.timeline}
+                  </div>
+                  <div className="text-gray-400 text-sm">Timeline</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )}
+
+    </>
   );
 };
 
