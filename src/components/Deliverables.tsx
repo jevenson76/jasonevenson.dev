@@ -193,7 +193,7 @@ const Deliverables = () => {
           transition={{ delay: 0.8 }}
           className="text-center mt-16 md:mt-20"
         >
-          <p className="text-gray-300 mb-6">
+          <p className="text-2xl md:text-3xl text-gray-200 mb-6 font-extralight">
             Ready to see what's possible for your business?
           </p>
           <a

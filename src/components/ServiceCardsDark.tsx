@@ -104,7 +104,7 @@ const services = [
 
 export default function ServiceCardsDark() {
   return (
-    <section className="py-19 md:py-29 bg-black relative overflow-hidden">
+    <section className="py-19 md:py-29 bg-gray-900 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-gray-900/20 via-transparent to-gray-800/20" />
@@ -140,7 +140,7 @@ export default function ServiceCardsDark() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
-              className="group relative bg-gray-900 rounded-2xl p-10 md:p-12 border border-gray-800 hover:border-[var(--quantum-glow)]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.3)] flex flex-col justify-between h-full"
+              className="group relative bg-gray-800 rounded-2xl p-10 md:p-12 border border-gray-700 hover:border-[var(--quantum-glow)]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.3)] flex flex-col justify-between h-full"
             >
               {/* Quantum glow effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-[var(--quantum-glow)]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -153,7 +153,7 @@ export default function ServiceCardsDark() {
                     {service.title}
                   </h3>
                   
-                  <p className="text-xl text-gray-300 mb-7 leading-relaxed font-extralight">
+                  <p className="text-xl text-gray-200 mb-7 leading-relaxed font-extralight">
                     {service.description}
                   </p>
                   
@@ -167,7 +167,7 @@ export default function ServiceCardsDark() {
                     {service.features.map((feature, featureIdx) => (
                       <li key={featureIdx} className="flex items-start gap-3">
                         <div className="w-1.5 h-1.5 bg-[var(--quantum-glow)] rounded-full mt-2 flex-shrink-0" />
-                        <span className="text-gray-300 text-base leading-relaxed font-extralight">{feature}</span>
+                        <span className="text-gray-200 text-base leading-relaxed font-extralight">{feature}</span>
                       </li>
                     ))}
                   </ul>
@@ -200,7 +200,7 @@ export default function ServiceCardsDark() {
           transition={{ delay: 0.8 }}
           className="text-center mt-19 md:mt-24"
         >
-          <p className="text-gray-300 mb-6">
+          <p className="text-2xl md:text-3xl text-gray-200 mb-6 font-extralight">
             Ready to see what's possible for your business?
           </p>
           <a

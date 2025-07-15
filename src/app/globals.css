@@ -6,6 +6,9 @@
 @layer base {
   * {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    /* Apply light weight and subtle tracking site-wide for consistency with hero text */
+    font-weight: 200; /* Tailwind `font-extralight` equivalent */
+    letter-spacing: 0.02em;
   }
 }
 
