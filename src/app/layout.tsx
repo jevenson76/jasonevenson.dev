@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google';
 import { Footer } from '@/components/Footer';
 import { SplashWrapper } from '@/components/SplashWrapper';
 import { SquarePattern } from '@/components/SquarePattern';
+import { Navbar } from '@/components/Navbar';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -35,10 +36,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${inter.className} font-sans`}>
       <body>
+        <Navbar />
         <SplashWrapper />
         <SquarePattern />
         {/* <ParticleField /> */}
-        <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24">
           {children}
         </main>
         <Footer />
