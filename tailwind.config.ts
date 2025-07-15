@@ -29,6 +29,10 @@ const config: Config = {
         'quantum-cyan': 'var(--quantum-cyan)',
         'quantum-purple': 'var(--quantum-purple)',
       },
+      spacing: {
+        19: '4.75rem', // Custom spacing used for tighter sections (~76px)
+        29: '7.25rem', // Custom spacing for larger section padding (~116px)
+      },
       animation: {
         'float': 'float 20s infinite linear',
         'rotate': 'rotate 20s infinite linear',
