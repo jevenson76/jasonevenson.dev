@@ -28,16 +28,16 @@ export function SquarePattern() {
           width={gridSize - 1}
           height={gridSize - 1}
           fill="none"
-          stroke="rgba(165, 180, 252, 0.12)"
+          stroke="rgba(165, 180, 252, 0.08)"
           strokeWidth="0.5"
           initial={{ 
-            opacity: 0.08,
+            opacity: 0.05,
             x: x,
             y: y,
             rotate: 0
           }}
           animate={{
-            opacity: [0.08, 0.18, 0.08],
+            opacity: [0.05, 0.12, 0.05],
             x: [
               x,
               x + Math.sin(delay + row * 0.1) * waveAmplitude,
@@ -78,25 +78,25 @@ export function SquarePattern() {
               width={gridSize - 2}
               height={gridSize - 2}
               fill="none"
-              stroke="rgba(165, 180, 252, 0.08)"
+              stroke="rgba(165, 180, 252, 0.04)"
               strokeWidth="0.5"
             />
           </pattern>
           
           {/* Gradient overlays for depth */}
           <radialGradient id="squareGradient1" cx="30%" cy="30%" r="70%">
-            <stop offset="0%" style={{ stopColor: '#a5b4fc', stopOpacity: 0.15 }} />
-            <stop offset="100%" style={{ stopColor: '#a5b4fc', stopOpacity: 0.03 }} />
+            <stop offset="0%" style={{ stopColor: 'var(--quantum-glow)', stopOpacity: 0.08 }} />
+            <stop offset="100%" style={{ stopColor: 'var(--quantum-glow)', stopOpacity: 0.01 }} />
           </radialGradient>
           
           <radialGradient id="squareGradient2" cx="70%" cy="70%" r="60%">
-            <stop offset="0%" style={{ stopColor: '#22d3ee', stopOpacity: 0.12 }} />
-            <stop offset="100%" style={{ stopColor: '#22d3ee', stopOpacity: 0.02 }} />
+            <stop offset="0%" style={{ stopColor: 'var(--quantum-cyan)', stopOpacity: 0.07 }} />
+            <stop offset="100%" style={{ stopColor: 'var(--quantum-cyan)', stopOpacity: 0.01 }} />
           </radialGradient>
           
           <radialGradient id="squareGradient3" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" style={{ stopColor: '#8b5cf6', stopOpacity: 0.08 }} />
-            <stop offset="100%" style={{ stopColor: '#8b5cf6', stopOpacity: 0.01 }} />
+            <stop offset="0%" style={{ stopColor: 'var(--quantum-purple)', stopOpacity: 0.05 }} />
+            <stop offset="100%" style={{ stopColor: 'var(--quantum-purple)', stopOpacity: 0.005 }} />
           </radialGradient>
         </defs>
         
@@ -112,7 +112,7 @@ export function SquarePattern() {
           height="100%"
           fill="url(#squareGradient1)"
           animate={{
-            opacity: [0.4, 0.8, 0.4],
+            opacity: [0.2, 0.4, 0.2],
             x: [0, 30, -20, 0],
             y: [0, 15, 25, 0]
           }}
@@ -128,7 +128,7 @@ export function SquarePattern() {
           height="100%"
           fill="url(#squareGradient2)"
           animate={{
-            opacity: [0.3, 0.7, 0.3],
+            opacity: [0.15, 0.35, 0.15],
             x: [0, -25, 35, 0],
             y: [0, 20, -10, 0]
           }}
@@ -145,7 +145,7 @@ export function SquarePattern() {
           height="100%"
           fill="url(#squareGradient3)"
           animate={{
-            opacity: [0.2, 0.6, 0.2],
+            opacity: [0.1, 0.3, 0.1],
             x: [0, 15, -30, 0],
             y: [0, -25, 20, 0]
           }}

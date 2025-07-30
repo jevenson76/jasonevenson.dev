@@ -31,18 +31,16 @@ export function HeroQuantum() {
       <div className="absolute z-20 text-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h1
           className="text-6xl md:text-8xl font-extralight tracking-widest uppercase"
-          style={{ fontFamily: 'Inter, sans-serif', fontWeight: 200 }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <span className="bg-gradient-to-r from-[#ffffff] via-[var(--quantum-glow)] to-[var(--quantum-cyan)] bg-clip-text text-transparent">
+          <span className="text-[var(--quantum-glow)]">
             Jason Evenson
           </span>
         </motion.h1>
         <motion.p
           className="mt-5 text-2xl md:text-3xl font-extralight tracking-wide text-[var(--quantum-cyan)]"
-          style={{ fontWeight: 200 }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
@@ -51,7 +49,6 @@ export function HeroQuantum() {
         </motion.p>
         <motion.p
           className="mt-7 text-xl md:text-2xl font-extralight tracking-wide text-gray-200 max-w-4xl mx-auto leading-relaxed"
-          style={{ fontWeight: 200 }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}

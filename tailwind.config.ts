@@ -12,6 +12,27 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        // Mapping of design tokens to CSS variables for consistent palette usage
+        primary: 'var(--color-primary)',
+        teal: 'var(--color-teal)',
+        lime: 'var(--color-lime)',
+        dark: 'var(--color-dark)',
+        black: 'var(--color-black)',
+        neon: 'var(--color-neon)',
+        lav: 'var(--color-lav)',
+        gold: 'var(--color-gold)',
+
+        'quantum-deep': 'var(--quantum-deep)',
+        'quantum-dark': 'var(--quantum-dark)',
+        'quantum-glow': 'var(--quantum-glow)',
+        'quantum-cyan': 'var(--quantum-cyan)',
+        'quantum-purple': 'var(--quantum-purple)',
+      },
+      spacing: {
+        19: '4.75rem', // Custom spacing used for tighter sections (~76px)
+        29: '7.25rem', // Custom spacing for larger section padding (~116px)
+      },
       animation: {
         'float': 'float 20s infinite linear',
         'rotate': 'rotate 20s infinite linear',

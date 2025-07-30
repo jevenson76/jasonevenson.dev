@@ -13,7 +13,7 @@ const ResultsStrip = () => {
   ];
 
   return (
-    <section className="relative py-5 md:py-7 overflow-hidden bg-gradient-to-r from-purple-900 via-blue-900 to-purple-900">
+    <section className="relative py-12 md:py-16 overflow-hidden bg-gradient-to-r from-purple-900 via-blue-900 to-purple-900">
       {/* Animated background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-black/20" />
@@ -43,15 +43,15 @@ const ResultsStrip = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-19"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontWeight: 700 }}>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-5 max-w-3xl mx-auto leading-tight">
             Proven Results That Speak Volumes
           </h2>
-          <p className="text-xl text-gray-200 max-w-2xl mx-auto font-extralight" style={{ fontWeight: 200 }}>
+          <p className="text-lg md:text-xl text-gray-100 max-w-2xl mx-auto font-extralight leading-normal">
             Numbers don't lie. Here's what happens when strategy meets execution.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
           {stats.map((stat, index) => (
             <motion.div
               key={index}
@@ -61,7 +61,7 @@ const ResultsStrip = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="text-center"
             >
-              <div className="text-5xl md:text-6xl font-light text-white mb-2" style={{ fontWeight: 300 }}>
+              <div className="text-5xl md:text-6xl font-light text-white mb-2 font-mono tabular-nums min-w-[6rem] md:min-w-[8rem] mx-auto">
                 <CountUp
                   end={stat.value}
                   duration={2.5}
@@ -73,7 +73,7 @@ const ResultsStrip = () => {
                   suffix={stat.suffix}
                 />
               </div>
-              <p className="text-base md:text-lg text-gray-200 font-extralight" style={{ fontWeight: 200 }}>
+              <p className="text-base md:text-lg text-gray-200 font-extralight">
                 {stat.label}
               </p>
             </motion.div>
