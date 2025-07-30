@@ -63,7 +63,7 @@ const aiDemos: AIDemo[] = [
     id: "vision",
     title: "Computer Vision",
     description: "Object detection, image classification, and visual content analysis.",
-    icon: <Image className="w-6 h-6" />,
+    icon: <Image className="w-6 h-6" aria-hidden="true" />,
     category: "vision",
     status: "running",
     metrics: {

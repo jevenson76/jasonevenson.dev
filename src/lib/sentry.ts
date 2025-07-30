@@ -1,4 +1,5 @@
 import * as Sentry from '@sentry/nextjs';
+import React from 'react';
 
 const SENTRY_DSN = process.env.NEXT_PUBLIC_SENTRY_DSN || '';
 
@@ -41,7 +42,7 @@ export const initSentry = () => {
 // Custom error boundary for React components
 export const withSentryErrorBoundary = (Component: React.ComponentType<any>) => {
   return Sentry.withErrorBoundary(Component, {
-    fallback: ({ error, resetError }) => (
+    fallback: ({ error, resetError }: { error: Error; resetError: () => void }) => (
       <div className="flex flex-col items-center justify-center min-h-[200px] p-8">
         <h2 className="text-xl font-semibold text-red-600 mb-4">
           Oops! Something went wrong

@@ -12,8 +12,8 @@ export const initGA = () => {
   if (typeof window === 'undefined' || !GA_TRACKING_ID) return;
 
   window.dataLayer = window.dataLayer || [];
-  window.gtag = function gtag() {
-    window.dataLayer.push(arguments);
+  window.gtag = function gtag(...args) {
+    window.dataLayer.push(args);
   };
   
   window.gtag('js', new Date());

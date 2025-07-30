@@ -429,7 +429,7 @@ function AnalyticsEngineDemo({ running }: { running: boolean }) {
       </div>
       
       <div className="grid grid-cols-3 gap-4 mb-4">
-        {metrics.map((metric, index) => (
+        {metrics.map((metric) => (
           <div key={metric.name} className="text-center">
             <div className={`text-lg font-bold ${
               running ? "text-blue-400" : "text-gray-400"
