@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Brain, MessageSquare, BarChart3, Image, Code, Play, Pause } from "lucide-react"
+import { Brain, MessageSquare, BarChart3, Image, Play, Pause } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 interface AIDemo {

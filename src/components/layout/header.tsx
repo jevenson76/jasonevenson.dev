@@ -92,7 +92,7 @@ export function Header() {
                 transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
               />
               <Zap className="w-4 h-4 mr-2" />
-              Let's Build Something Amazing
+              Let&apos;s Build Something Amazing
             </Button>
           </div>
 
@@ -140,7 +140,7 @@ export function Header() {
                 >
                   <Button variant="neural" className="w-full" onClick={() => setIsOpen(false)}>
                     <Zap className="w-4 h-4 mr-2" />
-                    Let's Build Something Amazing
+                    Let&apos;s Build Something Amazing
                   </Button>
                 </motion.div>
               </div>

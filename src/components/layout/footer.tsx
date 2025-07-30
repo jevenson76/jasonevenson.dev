@@ -201,7 +201,7 @@ export function Footer() {
               >
                 <h4 className="font-semibold mb-2">Ready to start your project?</h4>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Let's discuss how AI and automation can transform your business.
+                  Let&apos;s discuss how AI and automation can transform your business.
                 </p>
                 <Button variant="neural" size="sm" className="w-full">
                   Get Started Today

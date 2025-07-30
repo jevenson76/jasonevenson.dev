@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Zap, MessageCircle, Share2, BarChart, Workflow, Settings, Play, CheckCircle } from "lucide-react"
+import { MessageCircle, Share2, BarChart, Workflow, Settings, Play, CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 interface AutomationTool {

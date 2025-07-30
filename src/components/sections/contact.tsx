@@ -92,11 +92,11 @@ export function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-            Let's Build Something <span className="holographic-text">Amazing</span>
+            Let&apos;s Build Something <span className="holographic-text">Amazing</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Ready to transform your business with cutting-edge AI/ML solutions and intelligent automation? 
-            Let's discuss how we can work together to achieve your goals.
+            Let&apos;s discuss how we can work together to achieve your goals.
           </p>
         </motion.div>
 
@@ -111,10 +111,10 @@ export function Contact() {
             <div>
               <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                I'm always interested in discussing new opportunities, innovative projects, 
+                I&apos;m always interested in discussing new opportunities, innovative projects, 
                 and challenging problems that require creative technical solutions. Whether 
-                you're looking to implement AI/ML systems, automate workflows, or build 
-                enterprise applications, I'd love to hear from you.
+                you&apos;re looking to implement AI/ML systems, automate workflows, or build 
+                enterprise applications, I&apos;d love to hear from you.
               </p>
             </div>
 
@@ -180,7 +180,7 @@ export function Contact() {
                 Currently Available
               </h4>
               <p className="text-sm text-muted-foreground">
-                I'm currently accepting new projects and consulting opportunities. 
+                I&apos;m currently accepting new projects and consulting opportunities. 
                 Typical response time is within 24 hours for project inquiries.
               </p>
             </motion.div>
@@ -312,7 +312,7 @@ export function Contact() {
                   className="flex items-center space-x-2 text-green-400 text-sm"
                 >
                   <CheckCircle className="w-4 h-4" />
-                  <span>Message sent successfully! I'll get back to you soon.</span>
+                  <span>Message sent successfully! I&apos;ll get back to you soon.</span>
                 </motion.div>
               )}
 

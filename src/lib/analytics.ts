@@ -1,7 +1,7 @@
 declare global {
   interface Window {
-    gtag: (...args: any[]) => void;
-    dataLayer: any[];
+    gtag: (...args: unknown[]) => void;
+    dataLayer: unknown[];
   }
 }
 
@@ -39,7 +39,7 @@ export const trackEvent = (
     event_category?: string;
     event_label?: string;
     value?: number;
-    [key: string]: any;
+    [key: string]: unknown;
   } = {}
 ) => {
   if (typeof window === 'undefined' || !GA_TRACKING_ID) return;
@@ -53,7 +53,7 @@ export const trackEvent = (
 };
 
 // Track Core Web Vitals
-export const trackWebVitals = (metric: any) => {
+export const trackWebVitals = (metric: { name: string; id: string; value: number }) => {
   if (typeof window === 'undefined' || !GA_TRACKING_ID) return;
   
   window.gtag('event', metric.name, {
