@@ -50,7 +50,11 @@
 
 @layer components {
   .glass-card {
-    @apply backdrop-blur-md bg-white/5 border border-white/10 rounded-xl;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
   }
   
   .neural-gradient {
@@ -100,7 +104,9 @@
 /* Mobile optimizations */
 @media (max-width: 768px) {
   .glass-card {
-    @apply backdrop-blur-sm bg-white/10;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.1);
   }
 }
 
